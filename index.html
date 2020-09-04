@@ -18,6 +18,7 @@
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Source+Code+Pro:wght@600&display=swap" rel="stylesheet">
     <!-- FONTAWESOME -->
     <script src="https://kit.fontawesome.com/b8b7811531.js" crossorigin="anonymous"></script>
 
@@ -25,20 +26,19 @@
   </head>
 
   <body>
-
-    <!-- Add your site or application content here -->
-    
-            <!-- HEADER -->
-    
+<!-- BEGIN CONTENT -->    
+            <!-- HEADER -->    
       <header>
         <div class = "content-wrapper">
           <h3>&#60;Reese St Amant | web developer/&#62;</h3>
           <div class="header-divider">
             <!-- NAV -->    
             <nav>
-              <ul><li><a href="">portfolio</a></li>
-                <li><a href="">about</a></li>
-                <li><a href="">contact</a></li>
+              <ul>
+                <li><a href="#portfolio">portfolio</a></li>
+                
+                <li><a href="#about-me">about</a></li>
+                <li><a href="#contact">contact</a></li>
               </ul>
             </nav>
           </div>
@@ -48,49 +48,58 @@
             <!-- HERO-AREA WITH BACKGROUND IMAGE -->
     <section class="hero-area">
       <div class="content-wrapper">
-        <h1>Let's be brilliant together</h1>
+        <h1>Let's be <span>brilliant</span> together</h1>
       </div>
     </section>
 
             <!-- PORTFOLIO SECTION -->
     <section class="portfolio">
-      <div class="content-wrapper">
-        <h3>my portfolio</h3>
+
+      <div class="unplugged-wrapper">
+        <div class="projects">
+          <h3>my portfolio</h3>
+            <article>
+              <figure>
+                <a href="https://bettameta.github.io/unplugged-retreat/" target="_blank"><img src="/img/reese-unplugged.png" alt = "unplugged-retreat-site"></a>
+              </figure>
+                <p><h2>Unplugged Retreat Website</h2>
+                  Responsive HTML 5 & CSS from a Photoshop Design Comp <br>
+                  "Unplugged" is a fully functional 3-page responsive layout site, including hyperlinks and maps.  
+                  I crafted it to spec and added details and special touches to make it feel like a real site.  With 
+                  modifications of any type, this site could be yours.  It is perfect for growing a small business.  
+                </p>
+            </article>
+        </div>
+
+            <!-- THIS DIV WILL REVERSE IN MOBILE ONLY -->
+        <div class="reverse-wrapper">
           <article>
-            <figure>
-              <a href="https://bettameta.github.io/unplugged-retreat/" target="_blank"><img src="/img/reese-unplugged.png" alt = "unplugged-retreat"></a>
-            </figure>
-              <h2>Unplugged Retreat Website</h2>
-              <p>
-                Responsive HTML 5 & CSS from a Photoshop Comp <br>
-                This is a fully functional 3 page layout including hyperlinks and maps.  
-                It is designed te spec with details and special touches to feel like a real site.  
-                Please add more text!
-              </p>
-          </article>
-          <article>
-              <h2>Jubilee Austen Project</h2>
-              <p>
-                HTML 5 & CSS Website<br>
-                This site was designed for a web/dev professionial.  It is also designed
-                from a PSD comp with all the details intact.  It is elegant and functional.  Please add 
-                more text here!
+              <p><h2>Jubilee Austen Project</h2>
+                HTML 5 & CSS Website from a Photoshop Design Comp<br>
+                "Jubilee Austen" is a great introduction website.  It is perfect for professionals that want to get 
+                their names out there on the internet.   I coded this site to pixel-perfection per our client's brief.  
+                It is elegant and functional integrating skills and easy contact hyperlinks.   
               </p>
               <figure>
-                <a href="https://bettameta.github.io/Jubilee-Austen/" target="_blank"><img src="/img/reese-jubilee.png" alt = "jubilee-austen"></a>
+                <a href="https://bettameta.github.io/Jubilee-Austen/" target="_blank"><img src="/img/reese-jubilee.png" alt = "jubilee-austen-site"></a>
               </figure>
           </article>
+        </div> 
+            
+        <div class="rogue-wrapper">
           <article>
               <figure>
-                <a href="https://bettameta.github.io/responsive-rogue-ghp/" target="_blank"><img src="/img/reese-rogue.png" alt = "rogue-pickings"></a>
+                <a href="https://bettameta.github.io/responsive-rogue-ghp/" target="_blank"><img src="/img/reese-rogue.png" alt = "rogue-pickings-site"></a>
               </figure>
-              <h2>Rogue Pickings</h2>
-              <p>
+              <p><h2>Rogue Pickings</h2>
                 Responsive HTML 5 & CSS site from a Photoshop Comp<br>
-                This is a landing page designed for a hot new food truck.  This can be uploaded to feature items du jour and 
-                classic reviews.  It is simple and clean and please add more here...
+                "Rogue Pickings" is a landing page designed to provide a one-stop place for information for a 
+                mobile business.  I coded this site precisely from the client comp profile.  This site is ideal for a 
+                small restaurant and flexible, allowing key features to be updated easily.
               </p>
           </article>
+        </div>
+
       </div>
     </section>
 
@@ -99,15 +108,20 @@
           <div class="content-wrapper">
             <h3>about me</h3>
             <p>
-              I am passionate about the web.<br>
-              insert all about me here...
+              I was born and raised in Los Angeles, CA.  I have worked for many years on set for TV and film.  However, working 
+              in tech has always been a dream. I started learning HTML when I began playing around with a personal blog and website.  
+              Then being on a crew of a motion capture film, I was able to collaborate with amazing artists and engineers on 
+              projects via Unreal Engine, Vlad 3D encoding, and Giant Software.  I was in awe and completely hooked, and I felt 
+              compelled to learn more.  I find working in tech so liberating and empowering.  I'd love to share my vision to 
+              help you create something meaningful.<br>
+              Let's code something amazing!
             </p>
           </div>
         </div>
 
             <!-- FOOTER -->
         <div class="content-wrapper">
-          <div class="footer-content">
+          <div class="contact">
 
             <!-- EMAIL -->
             <address class="email-me">
@@ -123,6 +137,7 @@
                   <p><a href="https://github.com/bettameta" target="_blank"><i class="fab fa-github-alt"></i></a></p>
                   <p><a href="https://codepen.io/bettameta" target="_blank"><i class="fab fa-codepen"></i></a></p>
                   <p><a href="https://twitter.com/bettameta" target="_blank"><i class="fab fa-twitter"></i></a></p>
+                  <p><a href="https://www.tumblr.com/blog/bettameta" target="_blank"><i class="fab fa-tumblr-square"></i></a></p>
             </div>
           </div>
             <!-- MEET ME -->
@@ -138,8 +153,7 @@
       <div class="copyright"> 
         <h5>Copyright 2020 | iBettaMeta | Reese St Amant</h5>
       </div> 
-
-
+<!-- END CONTENT-->
 
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="js/plugins.js"></script>

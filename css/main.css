@@ -87,6 +87,143 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/*---- GENERAL PAGES BASE STYLES ------*/
+
+
+
+body{
+  font-family: 'Montserrat' , sans-serif;
+  font-size: 1em;
+  text-align: left;
+  color: #e2e3ed;
+  background-color: #1f202b;
+}
+
+ul,
+ol{
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+  color: #e2e3ed;
+}
+
+.content-wrapper{
+  padding:  50px 0;
+  width: 90%;
+
+}
+
+p{
+  font-size: 1em;
+  line-height: 1.17em;
+}
+
+address{
+  font-size: normal;
+}
+
+img{
+  width: 100%;
+}
+
+h3{
+  font-size: 1.125;
+}
+/*------------------------------------*/
+/******* HEADER AND FOOTER *********/
+
+header,
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+/*********** HEADER *********/
+
+header .content-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 95%;
+
+}
+
+header h3{
+  font-size: 1em;
+
+}
+
+header a{
+  font-size: 1em;
+}
+
+.header-divider{
+  width: 100%;
+  height: 2px;
+}
+
+header nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+
+
+/*********** HERO SECTION *********/
+ /** HERO BACKGROUND IMAGE **/
+ .hero-area{
+   background: url('../img/hero-background.png') center no-repeat #7e867f;
+   background-size: cover;
+   height: 722px;
+   width: 100%;
+ }
+
+ h1{
+  font-family: 'Source Code Pro', sans-serif;
+  font-size: 4.5em;
+}
+.hero-area h1 span{
+ color: #fa0075;
+}
+
+/*********** PORTFOLIO SECTION *********/
+
+
+
+.reverse-wrapper{
+  display: flex;
+  justify-content: center;
+  flex-direction: column-reverse;
+}
+
+
+
+ /** ABOUT ME BACKGROUND IMAGE **/
+
+ .about-me{
+   background: url('../img/about-me.png') center no-repeat #7e867f;
+   background-size: cover;
+   width: 100%;
+   height: 550px;
+ }
+
+
+
+ h3{
+   font-family: 'Source Code Pro', sans-serif;
+   font-size: 2.25em;
+ }
+
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */

@@ -145,11 +145,12 @@ img{
 /********** GENERAL FONT INFO  ****/
 
 h3{
-  font-size: 1.5em;
+  font-size: 1.3em;
+  color: #d8bb3a
 
 }
 p{
-  font-size: 1em;
+  font-size: .8em;
   line-height: 1.17em;
 }
 
@@ -256,27 +257,28 @@ h1{
   flex-flow: row wrap;
 }
 
-#portfolio figure{
+#portfolio figure img{
   border: 3px solid #d8bb3a;
 }
 
-#portfolio h3{
-  font-size: 1.8em;
+#portfolio .content-wrapper h3{
+  font-size: 1.5em;
   color: #d8bb3a;
   margin: 20px 0 0 0;
 }
 
 #portfolio h2{
-  font-size: 1.2em;
+  font-size: 1em;
   text-align: center;
 }
 
-.reverse-wrapper{
+/*
+.reverse-order{
   display: flex;
-  flex-direction:  row-reverse;
+  flex-flow: row wrap;
   padding:  20px 0;
   width: 90%;
-}
+}*/
 
 
 

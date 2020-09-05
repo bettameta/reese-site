@@ -2,30 +2,30 @@
 
 /* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
 /*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
+* What follows is the result of much research on cross-browser styling.
+* Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+* Kroc Camen, and the H5BP dev community and team.
+*/
 
 /* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
+  Base styles: opinionated defaults
+  ========================================================================== */
 
-html {
+  html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
 }
 
 /*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Vendor-prefixed and regular ::selection selectors cannot be combined:
- * https://stackoverflow.com/a/16982510/7133471
- *
- * Customize the background color to match your design.
- */
+  * Remove text-shadow in selection highlight:
+  * https://twitter.com/miketaylr/status/12228805301
+  *
+  * Vendor-prefixed and regular ::selection selectors cannot be combined:
+  * https://stackoverflow.com/a/16982510/7133471
+  *
+  * Customize the background color to match your design.
+  */
 
 ::-moz-selection {
   background: #b3d4fc;
@@ -38,8 +38,8 @@ html {
 }
 
 /*
- * A better looking default horizontal rule
- */
+  * A better looking default horizontal rule
+  */
 
 hr {
   display: block;
@@ -51,10 +51,10 @@ hr {
 }
 
 /*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
+  * Remove the gap between audio, canvas, iframes,
+  * images, videos and the bottom of their containers:
+  * https://github.com/h5bp/html5-boilerplate/issues/440
+  */
 
 audio,
 canvas,
@@ -66,8 +66,8 @@ video {
 }
 
 /*
- * Remove default fieldset styles.
- */
+  * Remove default fieldset styles.
+  */
 
 fieldset {
   border: 0;
@@ -76,16 +76,16 @@ fieldset {
 }
 
 /*
- * Allow only vertical resizing of textareas.
- */
+  * Allow only vertical resizing of textareas.
+  */
 
 textarea {
   resize: vertical;
 }
 
 /* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+    Author's custom styles
+    ========================================================================== */
 
 /*---- GENERAL PAGES BASE STYLES ------*/
 
@@ -113,9 +113,8 @@ a{
 
 .content-wrapper{
   width: 90%;
-  
+  margin: 0;
 }
-
 
 
 /********** IMG *************/
@@ -128,13 +127,13 @@ a{
   height: 350px;
 }
 
- /** ABOUT ME BACKGROUND IMAGE **/
+  /** ABOUT ME BACKGROUND IMAGE **/
 
- #about-me{
+  #about-me{
   background: url('/img/about-me.png') center no-repeat #7e867f;
   background-size: cover;
   width: 100%;
-  height: 300px;
+  height: 350px;
   
 }
 
@@ -149,8 +148,8 @@ h3{
   color: #d8bb3a;
   text-align: center;
   font-family:'Source Code Pro', sans-serif;
-
 }
+
 p{
   font-size: .8em;
   line-height: 1.17em;
@@ -169,7 +168,7 @@ header,
 footer{
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-content: center;
   flex-flow: row wrap;
 }
 
@@ -192,14 +191,15 @@ header h3{
 }
 
 header p{
-  margin: 5px 0;
+  width: 90%;
+  text-align: center;
 }
 
 header nav{
   margin: 0;
   display: flex;
   justify-content: space-around;
-  padding: 0;
+  padding: 0 0 10px 0;
   width: 95%;
 
 }
@@ -208,7 +208,6 @@ header nav ul{
   display: flex;
   justify-content: space-around;
   margin: 0;
-  padding: 0;
   width: 80%;
 }
 
@@ -225,33 +224,31 @@ header nav ul{
 
 header nav ul li{
   font-size: .9em;
-  margin-top: 15px;
+  margin-top: 5px;
   
 }
 
 
 /*********** HERO SECTION *********/
- 
+  
 .hero-area{
   display: flex;
   align-items: center;
   justify-content: center;
   flex-flow: row wrap;
-  
-  
 }
 
 h1{
   font-size: 2em;
   font-family: 'Source Code Pro', sans-serif;
-  padding: 70px 0;
+  padding: 100px 0 40px 0;
   margin: 0;
   width: 60%;
 }
 
 
 .hero-area h1 span{
- color: #d8bb3a;
+  color: #d8bb3a;
 }
 
 /******* PORTFOLIO SECTION ******/
@@ -267,87 +264,106 @@ h1{
   border: 3px solid #d8bb3a;
 }
 
-#portfolio .reverse-wrapper{
-  width: 90%;
-}
-
 #portfolio .content-wrapper h3{
   margin: 20px 0 0 0;
 }
 
 #portfolio h2{
-  font-size: 1em;
+  font-size: .8em;
   text-align: center;
 }
 
 
 /****** ABOUT ME SECTION *******/
 
-#about-me .content-wrapper{
-  padding: 20px 20px;
-  width: 80%;
+#about-me{
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+#about-me p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  margin: 0;
+
 }
 
 #about-me h3{
-  margin: 0;
+  margin: 20px;
 }
 
 
 /************ FOOTER ********/
 
 footer{
-  display: flex;
-  align-content: center;
-  flex-flow: row wrap;
-  height: 200px;
-  
-}
+  flex-direction: column;  
 
-#contact .content-wrapper p{
-  
-  text-align: center;
-  width: 100%;
-}
-
-footer h3{
-  font-size: 1em;
-}
-
-
-footer .social-icons p i{
- 
-  text-align: center;
-  display: flex;
-  justify-content: space-around;
+  /* THIS FIXES MY EARLIER ALIGNMENT CODE */
+  text-align: center; 
 
 }
 
 footer p{
   margin: 0;
-  padding: px 0;
-  font-size: 1em;
 }
 
+footer .content-wrapper{
+  width: 90%;
+  margin: 0;
+  padding: 0;
+}
 
-footer .social{
+footer .contact{
+  margin-bottom: 20px;  
+}
+
+.footer-divider{
+  background-color: #363535;
+  height: 1px;
+  width: 100%;
+}
+
+footer .social-icons{
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-footer h5{
+footer p{
+  font-size: 1.5em;
+}
+
+footer .social-icons p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+footer .social-icons p i{
+  font-size: 1.2em;
+}
+
+footer .copyright{
+  margin: 20px 0 10px 0;
+}
+
+footer .copyright h5{
   margin-bottom:  10px;
-  font-size: em;
+  font-size: .4em;
 }
 
 
 /* ==========================================================================
-   Helper classes
-   ========================================================================== */
+    Helper classes
+    ========================================================================== */
 
 /*
- * Hide visually and from screen readers
- */
+  * Hide visually and from screen readers
+  */
 
 .hidden,
 [hidden] {
@@ -355,13 +371,13 @@ footer h5{
 }
 
 /*
- * Hide only visually, but have it available for screen readers:
- * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- *
- * 1. For long content, line feeds are not interpreted as spaces and small width
- *    causes content to wrap 1 word per line:
- *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
- */
+  * Hide only visually, but have it available for screen readers:
+  * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+  *
+  * 1. For long content, line feeds are not interpreted as spaces and small width
+  *    causes content to wrap 1 word per line:
+  *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+  */
 
 .sr-only {
   border: 0;
@@ -377,10 +393,10 @@ footer h5{
 }
 
 /*
- * Extends the .sr-only class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
+  * Extends the .sr-only class to allow the element
+  * to be focusable when navigated to via the keyboard:
+  * https://www.drupal.org/node/897638
+  */
 
 .sr-only.focusable:active,
 .sr-only.focusable:focus {
@@ -394,24 +410,24 @@ footer h5{
 }
 
 /*
- * Hide visually and from screen readers, but maintain layout
- */
+  * Hide visually and from screen readers, but maintain layout
+  */
 
 .invisible {
   visibility: hidden;
 }
 
 /*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
+  * Clearfix: contain floats
+  *
+  * For modern browsers
+  * 1. The space content is one way to avoid an Opera bug when the
+  *    `contenteditable` attribute is included anywhere else in the document.
+  *    Otherwise it causes space to appear at the top and bottom of elements
+  *    that receive the `clearfix` class.
+  * 2. The use of `table` rather than `block` is only necessary if using
+  *    `:before` to contain the top-margins of child elements.
+  */
 
 .clearfix::before,
 .clearfix::after {
@@ -424,10 +440,10 @@ footer h5{
 }
 
 /* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
+    EXAMPLE Media Queries for Responsive Design.
+    These examples override the primary ('mobile first') styles.
+    Modify as content requires.
+    ========================================================================== */
 
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
@@ -441,10 +457,10 @@ footer h5{
 }
 
 /* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
+    Print styles.
+    Inlined to avoid the additional HTTP request:
+    https://www.phpied.com/delay-loading-your-print-css/
+    ========================================================================== */
 
 @media print {
   *,
@@ -471,9 +487,9 @@ footer h5{
   }
 
   /*
-   * Don't show links that are fragment identifiers,
-   * or use the `javascript:` pseudo protocol
-   */
+    * Don't show links that are fragment identifiers,
+    * or use the `javascript:` pseudo protocol
+    */
   a[href^="#"]::after,
   a[href^="javascript:"]::after {
     content: "";
@@ -490,9 +506,9 @@ footer h5{
   }
 
   /*
-   * Printing Tables:
-   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
-   */
+    * Printing Tables:
+    * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+    */
   thead {
     display: table-header-group;
   }

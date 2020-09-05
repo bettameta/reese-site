@@ -98,7 +98,7 @@ body{
   font-size: 1em;
   text-align: left;
   color: #e2e3ed;
-  background-color: #737777;
+  background-color: #202020;
   /*position: absolute;*/
 }
 
@@ -112,10 +112,10 @@ a{
 }
 
 .content-wrapper{
-  padding:  20px 0;
   width: 90%;
-
+  
 }
+
 
 
 /********** IMG *************/
@@ -145,8 +145,10 @@ img{
 /********** GENERAL FONT INFO  ****/
 
 h3{
-  font-size: 1.3em;
-  color: #d8bb3a
+  font-size: 1.2em;
+  color: #d8bb3a;
+  text-align: center;
+  font-family:'Source Code Pro', sans-serif;
 
 }
 p{
@@ -160,6 +162,7 @@ address{
 
 /****** END PAGE BASE STYLES ********/
 
+
 /******* HEADER AND FOOTER BASE *********/
 
 header,
@@ -169,6 +172,10 @@ footer{
   align-items: center;
   flex-flow: row wrap;
 }
+
+/*---------------------------------------
+            MOBILE STYLES
+----------------------------------------*/
 
 /*********** HEADER *********/
 
@@ -181,12 +188,10 @@ header .content-wrapper{
 
 header h3{
   margin: 5px 0;
-  font-family: 'Source Code Pro' sans-serif;
   font-size: 1.5em;
 }
 
 header p{
-  font-size: .8em;
   margin: 5px 0;
 }
 
@@ -237,10 +242,11 @@ header nav ul li{
 }
 
 h1{
-  font-size: 2.5em;
+  font-size: 2em;
   font-family: 'Source Code Pro', sans-serif;
   padding: 70px 0;
   margin: 0;
+  width: 60%;
 }
 
 
@@ -248,7 +254,7 @@ h1{
  color: #d8bb3a;
 }
 
-/*********** PORTFOLIO SECTION *********/
+/******* PORTFOLIO SECTION ******/
 
 #portfolio{
   display: flex;
@@ -261,9 +267,11 @@ h1{
   border: 3px solid #d8bb3a;
 }
 
+#portfolio .reverse-wrapper{
+  width: 90%;
+}
+
 #portfolio .content-wrapper h3{
-  font-size: 1.5em;
-  color: #d8bb3a;
   margin: 20px 0 0 0;
 }
 
@@ -272,23 +280,65 @@ h1{
   text-align: center;
 }
 
-/*
-.reverse-order{
+
+/****** ABOUT ME SECTION *******/
+
+#about-me .content-wrapper{
+  padding: 20px 20px;
+  width: 80%;
+}
+
+#about-me h3{
+  margin: 0;
+}
+
+
+/************ FOOTER ********/
+
+footer{
   display: flex;
+  align-content: center;
   flex-flow: row wrap;
-  padding:  20px 0;
-  width: 90%;
-}*/
+  height: 200px;
+  
+}
+
+#contact .content-wrapper p{
+  
+  text-align: center;
+  width: 100%;
+}
+
+footer h3{
+  font-size: 1em;
+}
 
 
+footer .social-icons p i{
+ 
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+footer p{
+  margin: 0;
+  padding: px 0;
+  font-size: 1em;
+}
 
 
+footer .social{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 
-
-
-
-
-
+footer h5{
+  margin-bottom:  10px;
+  font-size: em;
+}
 
 
 /* ==========================================================================

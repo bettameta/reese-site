@@ -316,7 +316,7 @@ footer .content-wrapper{
   padding: 0;
 }
 
-footer .contact{
+footer .contact-me{
   margin-bottom: 20px;  
 }
 
@@ -445,8 +445,111 @@ footer .copyright h5{
     Modify as content requires.
     ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+  /*----------------------------------------------------
+                      TABLET MEDIA QUERIES 
+  -----------------------------------------------------*/
+
+@media only screen and (min-width: 768px){
+  /*----------- GENERAL STYLES ------------------*/
+    .content-wrapper{
+      max-width: 640px;
+      margin: 100px 0;
+    }
+
+    /********** GENERAL FONT INFO  ****/
+
+  h3{
+    font-size: 2.25em;
+    
+  }
+
+  h1{
+    font-size: 4.5em;
+  }
+
+  h2{
+    font-size:  1.5em;
+  }
+
+  p{
+    font-size: 1.5em;
+    line-height: 1.6em;
+  }
+  /********** IMG *************/
+
+  /** HERO BACKGROUND IMAGE **/
+  .hero-area{
+    height: 600px;
+  }
+
+  /** ABOUT ME BACKGROUND IMAGE **/
+
+  #about-me{
+  height: 800px;  
+  }
+
+  /********** HEADER ***********/
+
+  header .content-wrapper{
+    margin: 15px;
+    width: 90%;
+  }
+  
+  header h3{
+    font-size: 1.875em;
+  }
+
+  .header-divider{
+    height: 0;
+    width: 0%;
+  }
+  
+  header p{
+    width: 90%;
+    text-align: center;
+  }
+  
+  header nav{
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 0 10px 0;
+    width: 90%;
+  
+  }
+  
+  header nav ul li{
+    font-size: 1.5em;
+    margin-top: 5px;
+    
+  }
+
+
+
+
+
+
+
+
+
+
+}
+  /*----------------------------------------------------
+                  DESKTOP MEDIA QUERIES 
+-----------------------------------------------------*/
+@media only screen and (min-width: 1200px){
+  /*----------- GENERAL STYLES ------------------*/
+.content-wrapper{
+  max-width: 960px;
+} 
+
+
+
+
+
+
+
+
 }
 
 @media print,

@@ -186,13 +186,14 @@ header .content-wrapper{
 }
 
 header h3{
-  margin: 5px 0;
+  margin: 5px 20px;
   font-size: 1.5em;
 }
 
-header p{
+header div p{
+  margin: 0 20px 10px 20px;
   width: 90%;
-  text-align: center;
+ 
 }
 
 header nav{
@@ -200,6 +201,7 @@ header nav{
   display: flex;
   justify-content: space-around;
   padding: 0 0 10px 0;
+  margin: 5px 0;
   width: 95%;
 
 }
@@ -241,7 +243,7 @@ header nav ul li{
 h1{
   font-size: 2em;
   font-family: 'Source Code Pro', sans-serif;
-  padding: 100px 0 40px 0;
+  padding: 100px 20px 40px 20px;
   margin: 0;
   width: 60%;
 }
@@ -273,6 +275,15 @@ h1{
   text-align: center;
 }
 
+#portfolio article p{
+  padding: 0 20px;
+}
+
+#portfolio .divider{
+  background-color: #d8bb3a;
+  height: 1px;
+  width: 100%;
+}
 
 /****** ABOUT ME SECTION *******/
 
@@ -300,14 +311,6 @@ h1{
 
 footer{
   flex-direction: column;  
-
-  /* THIS FIXES MY EARLIER ALIGNMENT CODE */
-  text-align: center; 
-
-}
-
-footer p{
-  margin: 0;
 }
 
 footer .content-wrapper{
@@ -316,9 +319,11 @@ footer .content-wrapper{
   padding: 0;
 }
 
-footer .contact-me{
-  margin-bottom: 20px;  
+footer div p{
+  text-align: center;
+  margin-bottom: 10px;
 }
+
 
 .footer-divider{
   background-color: #363535;
@@ -334,6 +339,7 @@ footer .social-icons{
 
 footer p{
   font-size: 1.5em;
+  margin: 0;
 }
 
 footer .social-icons p{
@@ -344,16 +350,17 @@ footer .social-icons p{
 }
 
 footer .social-icons p i{
-  font-size: 1.2em;
+  font-size: .9em;
 }
 
 footer .copyright{
-  margin: 20px 0 10px 0;
+  margin: 15px 0 0 0;
 }
 
 footer .copyright h5{
-  margin-bottom:  10px;
-  font-size: .4em;
+  text-align: center;
+  margin-bottom: 5px;
+
 }
 
 
@@ -472,7 +479,7 @@ footer .copyright h5{
   }
 
   p{
-    font-size: 1.5em;
+    font-size: 1em;
     line-height: 1.6em;
   }
   /********** IMG *************/
@@ -525,9 +532,11 @@ footer .copyright h5{
   }
 
 
+/******** PORTFOLIO *********/
 
-
-
+#portfolio .content-wrapper{
+  margin: 50px 0:
+}
 
 
 
@@ -548,7 +557,24 @@ footer .copyright h5{
 
 
 
+#portfolio article{
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  align-items: center;
+}
 
+#portfolio article div{
+  width: 45%;
+}
+
+#portfolio figure{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+}
 
 }
 

@@ -567,8 +567,14 @@ footer .copyright h5{
     height: 3px;
   }
 
+  #portfolio article{
+    padding: 0 20px;
+  }
+
+
   #portfolio figure img{
     border: 5px solid #d8bb3a;
+    margin-right: 20px;
   }
 
   /******* TAB ABOUT ME ****/

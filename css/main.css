@@ -97,8 +97,8 @@ body{
   font-family: 'Montserrat' , sans-serif;
   font-size: 1em;
   text-align: left;
-  color: #e2e3ed;
-  background-color: #202020;
+  color: #c6c7d4;
+  background-color: #292828;
   /*position: absolute;*/
 }
 
@@ -124,7 +124,7 @@ a{
   background: url('/img/hero-background.png') center no-repeat #7e867f;
   background-size: cover;
   width: 100%;
-  height: 350px;
+  height: 300px;
 }
 
   /** ABOUT ME BACKGROUND IMAGE **/
@@ -133,7 +133,7 @@ a{
   background: url('/img/about-me.png') center no-repeat #7e867f;
   background-size: cover;
   width: 100%;
-  height: 350px;
+  height: 300px;
   
 }
 
@@ -185,15 +185,32 @@ header .content-wrapper{
   flex-flow: row wrap;
 }
 
-header h3{
-  margin: 5px 20px;
-  font-size: 1.5em;
+header div{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-flow: row wrap;
+}
+
+header div h3{
+  font-size: 1.875em;
+  margin: 25px 0 0 0;
 }
 
 header div p{
-  margin: 0 20px 10px 20px;
-  width: 90%;
- 
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  width: 100%;
+  font-size: .8em;
+  text-align: center;
+}
+
+
+.header-divider{
+  background-color: #363535;
+  height: 2px;
+  width: 100%;
 }
 
 header nav{
@@ -211,12 +228,6 @@ header nav ul{
   justify-content: space-around;
   margin: 0;
   width: 80%;
-}
-
-.header-divider{
-  background-color: #363535;
-  height: 1px;
-  width: 100%;
 }
 
 header nav ul{
@@ -282,7 +293,7 @@ h1{
 #portfolio .divider{
   background-color: #d8bb3a;
   height: 1px;
-  width: 100%;
+  width: 90%;
 }
 
 /****** ABOUT ME SECTION *******/
@@ -297,9 +308,10 @@ h1{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px 20px;
+  padding: 25px 0 0 20px;
   margin: 0;
-
+  width: 85%;
+  
 }
 
 #about-me h3{
@@ -310,6 +322,7 @@ h1{
 /************ FOOTER ********/
 
 footer{
+  display: flex;
   flex-direction: column;  
 }
 
@@ -319,16 +332,16 @@ footer .content-wrapper{
   padding: 0;
 }
 
-footer div p{
-  text-align: center;
-  margin-bottom: 10px;
+footer h3{
+  font-size: 1em;
 }
 
-
-.footer-divider{
-  background-color: #363535;
-  height: 1px;
-  width: 100%;
+footer p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  margin: 0;
 }
 
 footer .social-icons{
@@ -337,10 +350,7 @@ footer .social-icons{
   align-items: center;
 }
 
-footer p{
-  font-size: 1.5em;
-  margin: 0;
-}
+
 
 footer .social-icons p{
   display: flex;
@@ -350,16 +360,17 @@ footer .social-icons p{
 }
 
 footer .social-icons p i{
-  font-size: .9em;
+  font-size: 1em;
 }
 
 footer .copyright{
-  margin: 15px 0 0 0;
+  margin: 10px 0 0 0;
 }
 
 footer .copyright h5{
   text-align: center;
-  margin-bottom: 5px;
+  margin: 10px 0 10px 0;
+  font-size: .5em;
 
 }
 
@@ -457,13 +468,13 @@ footer .copyright h5{
   -----------------------------------------------------*/
 
 @media only screen and (min-width: 768px){
-  /*----------- GENERAL STYLES ------------------*/
+  /*----------- TAB GENERAL STYLES ------------------*/
     .content-wrapper{
       max-width: 640px;
       margin: 100px 0;
     }
 
-    /********** GENERAL FONT INFO  ****/
+  /********** TAB GENERAL FONT INFO  ****/
 
   h3{
     font-size: 2.25em;
@@ -471,7 +482,7 @@ footer .copyright h5{
   }
 
   h1{
-    font-size: 4.5em;
+    font-size: 3.5em;
   }
 
   h2{
@@ -482,38 +493,46 @@ footer .copyright h5{
     font-size: 1em;
     line-height: 1.6em;
   }
-  /********** IMG *************/
+  /********** TAB IMG *************/
 
   /** HERO BACKGROUND IMAGE **/
   .hero-area{
-    height: 600px;
+    height: 500px;
   }
 
-  /** ABOUT ME BACKGROUND IMAGE **/
+  /** TAB ABOUT ME BACKGROUND IMAGE **/
 
   #about-me{
-  height: 800px;  
+  height: 500px;  
   }
 
-  /********** HEADER ***********/
+  /********** TAB HEADER ***********/
 
   header .content-wrapper{
     margin: 15px;
     width: 90%;
   }
   
-  header h3{
+  header div h3{
     font-size: 1.875em;
+  }
+
+  header div{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-flow: row wrap;
+  }
+
+  header div p{
+    width: 90%;
+    font-size: 1em;
+  
   }
 
   .header-divider{
     height: 0;
     width: 0%;
-  }
-  
-  header p{
-    width: 90%;
-    text-align: center;
   }
   
   header nav{
@@ -531,14 +550,85 @@ footer .copyright h5{
     
   }
 
+  /******** TAB HERO AREA *********/
 
-/******** PORTFOLIO *********/
+  .hero-area h1{
+    padding-top: 75px
+  }
 
-#portfolio .content-wrapper{
-  margin: 50px 0:
-}
+  /******** TAB PORTFOLIO *********/
 
+  #portfolio .content-wrapper{
+    margin: 25px 0;
+  }
 
+  #portfolio .divider{
+    height: 3px;
+  }
+
+  #portfolio figure img{
+    border: 5px solid #d8bb3a;
+  }
+
+  /******* TAB ABOUT ME ****/
+
+  #about-me p{
+    padding: 20px 0 0 20px;
+  }
+
+  /******** TAB FOOTER ******/
+
+  footer{
+    justify-content: center;
+    
+  }
+
+  footer .content-wrapper{
+    width: 90%;
+    margin: 100px 0;
+  }
+
+  #contact{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+   
+  }
+
+  footer .contact-me{
+    margin-bottom: 0;
+  }
+
+  footer .contact-me h3,
+  footer .social h3{
+    font-size: 1.5em;
+  }
+
+  footer .contact-me p{
+    font-size: 2em;
+   
+  }
+
+  footer .social-icons{
+    display: flex;
+    justify-content: space-around;
+
+    width: 12.5em
+ 
+  }
+
+  footer .social-icons p{
+    font-size: 2em;
+
+  }
+  
+  footer .copyright h5{
+    text-align: center;
+    margin: 10px 0 10px 0;
+    font-size: 1em;
+  
+  }
 
 
 

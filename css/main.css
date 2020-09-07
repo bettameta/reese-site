@@ -356,11 +356,12 @@ footer .social-icons p{
   display: flex;
   justify-content: center;
   align-items: center;
-
+  padding: 0 10px 0 10px;
 }
 
-footer .social-icons p i{
-  font-size: 1em;
+footer .social-icons p{
+  font-size: 1.2em;
+  
 }
 
 footer .copyright{
@@ -477,7 +478,7 @@ footer .copyright h5{
   /********** TAB GENERAL FONT INFO  ****/
 
   h3{
-    font-size: 2.25em;
+    font-size: 1.75em;
     
   }
 
@@ -485,8 +486,8 @@ footer .copyright h5{
     font-size: 3.5em;
   }
 
-  h2{
-    font-size:  1.5em;
+  #portfolio h2{
+    font-size:  1em;
   }
 
   p{
@@ -572,6 +573,10 @@ footer .copyright h5{
 
   /******* TAB ABOUT ME ****/
 
+  #about-me .content-wrapper{
+    margin: 25px 0;
+  }
+
   #about-me p{
     padding: 20px 0 0 20px;
   }
@@ -585,7 +590,7 @@ footer .copyright h5{
 
   footer .content-wrapper{
     width: 90%;
-    margin: 100px 0;
+    margin: 30px 0;
   }
 
   #contact{
@@ -620,13 +625,13 @@ footer .copyright h5{
 
   footer .social-icons p{
     font-size: 2em;
-
+    padding: 0 15px 0 15px;
   }
   
   footer .copyright h5{
     text-align: center;
-    margin: 10px 0 10px 0;
-    font-size: 1em;
+    margin: 20px 0 10px 0;
+    font-size: .8em;
   
   }
 
@@ -642,29 +647,100 @@ footer .copyright h5{
   max-width: 960px;
 } 
 
+  /******* DESK FONTS ************/
+
+  h3{
+    font-size: 2.25em;
+    
+  }
+
+  h1{
+    font-size: 4.5em;
+  }
+
+  #portfolio h2{
+    font-size:  1.5em;
+  }
+
+  p{
+    font-size: 1.3em;
+    line-height: 1.8em;
+  }
+
+  /********** TAB IMG *************/
+
+  /** HERO BACKGROUND IMAGE **/
+  .hero-area{
+    height: 700px;
+  }
+
+  /** TAB ABOUT ME BACKGROUND IMAGE **/
+
+  #about-me{
+  height: 600px;  
+  }
+
+/********* DESK HEADER ********/
+  
+  header div h3{
+    font-size: 2em;
+  }
+
+
+  header div p{
+    font-size: 1.875em;
+  }
+
+  nav ul{
+    font-size: 1.2em;
+  }
+
+
+  /******** DESK HERO-AREA *****/
 
 
 
+  /****** DESK PORTFOLIO ******/
 
 
-#portfolio article{
-  display: flex;
-  justify-content: space-between;
-  flex-flow: row wrap;
-  align-items: center;
-}
+  #portfolio article{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    align-items: center;
+  }
 
-#portfolio article div{
-  width: 45%;
-}
+  #portfolio article div{
+    width: 46%;
+  }
 
-#portfolio figure{
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-  width: 45%;
-}
+  #portfolio figure{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+  }
+
+  #portfolio .divider{
+    height: 0px;
+  }
+
+  /******* DESK FOOTER *******/
+
+  footer .social-icons p{
+    font-size: 2.5em;
+    padding: 0 30px 0 30px;
+
+  }
+
+  footer .copyright h5{
+    text-align: center;
+    margin: 10px 0 20px 0;
+    font-size: 1.2em;
+  
+  }
+
 
 }
 

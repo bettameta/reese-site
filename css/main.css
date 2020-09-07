@@ -96,7 +96,6 @@ html{
 body{
   font-family: 'Montserrat' , sans-serif;
   font-size: 1em;
-  text-align: left;
   color: #c6c7d4;
   background-color: #302e2e;
   /*position: absolute;*/
@@ -195,7 +194,7 @@ header div{
 header div h3{
   font-size: 1.875em;
   margin: 25px 0 0 0;
-  color: #c9ad31
+  
 }
 
 header div p{
@@ -319,7 +318,7 @@ h1{
 
 #about-me h3{
   margin: 20px;
-  color: #c9ad31
+ 
 }
 
 
@@ -327,7 +326,8 @@ h1{
 
 footer{
   display: flex;
-  flex-direction: column;  
+  flex-direction: column; 
+  justify-content: center; 
 }
 
 footer .content-wrapper{
@@ -336,8 +336,9 @@ footer .content-wrapper{
   padding: 0;
 }
 
-footer #contact{
-  text-align: center;
+footer #contact .content-wrapper{
+  display: flex;
+  align-content: center;
 }
 
 footer h3{
@@ -379,7 +380,7 @@ footer .copyright{
 footer .copyright h5{
   text-align: center;
   margin: 10px 0 10px 0;
-  font-size: .5em;
+  font-size: .4em;
 
 }
 
@@ -581,7 +582,7 @@ footer .copyright h5{
 
 
   #portfolio figure img{
-    border: 5px solid #c9ad31;
+    border: 5px solid ;
     margin-right: 20px;
   }
 
@@ -599,7 +600,7 @@ footer .copyright h5{
 
   footer{
     justify-content: center;
-    
+    flex-direction: row wrap;
   }
 
   footer .content-wrapper{
@@ -632,9 +633,6 @@ footer .copyright h5{
   footer .social-icons{
     display: flex;
     justify-content: space-around;
-
-    width: 12.5em
- 
   }
 
   footer .social-icons p{
@@ -643,7 +641,6 @@ footer .copyright h5{
   }
   
   footer .copyright h5{
-    text-align: center;
     margin: 20px 0 10px 0;
     font-size: .8em;
   
@@ -749,9 +746,8 @@ footer .copyright h5{
   }
 
   footer .copyright h5{
-    text-align: center;
     margin: 10px 0 20px 0;
-    font-size: 1.2em;
+    font-size: 1em;
   
   }
 

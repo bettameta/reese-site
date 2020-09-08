@@ -154,28 +154,19 @@ p{
   line-height: 1.17em;
 }
 
-address{
-  font-style: normal;
-}
-
-/****** END PAGE BASE STYLES ********/
-
-
-/******* HEADER AND FOOTER BASE *********/
-
-header,
-footer{
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-flow: row wrap;
-}
 
 /*---------------------------------------
             MOBILE STYLES
 ----------------------------------------*/
 
 /*********** HEADER *********/
+
+header{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-flow: row wrap;
+}
 
 header .content-wrapper{
   display: flex;
@@ -313,75 +304,65 @@ h1{
   padding: 25px 0 0 20px;
   margin: 0;
   width: 85%;
-  
+  color: #d4d7f5
 }
 
 #about-me h3{
   margin: 20px;
- 
 }
 
 
 /************ FOOTER ********/
 
 footer{
-  display: flex;
-  flex-direction: column; 
-  justify-content: center; 
+  display: flex; 
+  justify-content: center;
+  flex-direction: column;
+  flex-flow: row wrap;
+ 
 }
 
 footer .content-wrapper{
-  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
   margin: 0;
   padding: 0;
-}
-
-footer #contact .content-wrapper{
-  display: flex;
-  align-content: center;
 }
 
 footer h3{
   font-size: 1em;
 }
 
+/* PADDING AROUND & ALL ICONS */
 footer p{
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1em;
-  margin: 0;
-}
-
-footer .social-icons{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-
-
-footer .social-icons p{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 10px 0 10px;
-}
-
-footer .social-icons p{
   font-size: 1.2em;
+  margin: 0;
+  padding: 0 20px 0 20px;
   
 }
 
+/* CONFINES OF SOCIAL ICONS AS A GROUP */
+footer .social-icons{
+  display: flex;
+  justify-content: space-around;
+  align-items: center; 
+}
+
+/* COPYRIGHT */
 footer .copyright{
-  margin: 10px 0 0 0;
+  margin: 10px 30px 0 30px;
+  width: 100%;
 }
 
 footer .copyright h5{
   text-align: center;
-  margin: 10px 0 10px 0;
+  margin: 10px 0px;
   font-size: .4em;
-
 }
 
 
@@ -495,10 +476,6 @@ footer .copyright h5{
     font-size: 3.5em;
   }
 
-  #portfolio h2{
-    font-size:  1em;
-  }
-
   p{
     font-size: 1em;
     line-height: 1.6em;
@@ -586,6 +563,10 @@ footer .copyright h5{
     margin-right: 20px;
   }
 
+  #portfolio h2{
+    font-size:  1em;
+  }
+
   /******* TAB ABOUT ME ****/
 
   #about-me .content-wrapper{
@@ -600,53 +581,57 @@ footer .copyright h5{
 
   footer{
     justify-content: center;
-    flex-direction: row wrap;
+    flex-direction: row;
   }
 
   footer .content-wrapper{
-    width: 90%;
+    width: 100%;
     margin: 30px 0;
+    justify-content: center;
   }
 
-  #contact{
+  #contact-me{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0;
-   
+    justify-content: space-between;
+  
   }
 
-  footer .contact-me{
-    margin-bottom: 0;
-  }
-
-  footer .contact-me h3,
-  footer .social h3{
+  footer h3{
     font-size: 1.5em;
   }
-
-  footer .contact-me p{
+  /* PADDING MAIL ICONS*/
+  footer p{
     font-size: 2em;
-   
+    padding: 0 40px;
   }
 
+  footer .contact{
+    margin: 0 30px;
+  }
+
+  footer .social{
+    margin: 0 40px;
+    width: 40%;
+  }
+
+  /* CONFINES OF SOCIAL ICONS AS A GROUP */
   footer .social-icons{
     display: flex;
     justify-content: space-around;
+  
   }
 
   footer .social-icons p{
     font-size: 2em;
-    padding: 0 15px 0 15px;
+    padding: 0 10px 0 10px;
   }
-  
+
+  /* COPYRIGHT */
   footer .copyright h5{
     margin: 20px 0 10px 0;
     font-size: .8em;
   
   }
-
-
 
 }
   /*----------------------------------------------------
@@ -706,11 +691,6 @@ footer .copyright h5{
     font-size: 1.2em;
   }
 
-
-  /******** DESK HERO-AREA *****/
-
-
-
   /****** DESK PORTFOLIO ******/
 
 
@@ -738,6 +718,11 @@ footer .copyright h5{
   }
 
   /******* DESK FOOTER *******/
+
+  footer .content-wrapper{
+    width: 90%;
+  
+  }
 
   footer .social-icons p{
     font-size: 2.5em;

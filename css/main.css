@@ -147,8 +147,8 @@ h3{
 }
 
 p{
-  font-size: .8em;
-  line-height: 1.17em;
+  font-size: .9em;
+  line-height: 1.27em;
 }
 
 
@@ -298,14 +298,14 @@ h1{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px 0 80px 20px;
+  padding: 20px 0 90px 20px;
   margin: 0;
   width: 85%;
   color: #d4d7f5
 }
 
 #about-me h3{
-  margin: 20px;
+  margin: 20px 0 5px;
 }
 
 

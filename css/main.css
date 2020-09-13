@@ -298,8 +298,8 @@ h1{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px 0 90px 20px;
-  margin: 0;
+  margin: 20px 0 90px 20px;
+  
   width: 85%;
   color: #d4d7f5
 }

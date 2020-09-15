@@ -141,7 +141,7 @@ img{
 
 h3{
   font-size: 1.2em;
-  color: #c9ad31;
+  color: #c9ad31 !important;
   text-align: center;
   font-family:'Source Code Pro', sans-serif;
 }
@@ -245,12 +245,12 @@ h1{
   padding: 80px 20px 60px 20px;
   margin: 0;
   width: 45%;
-  color: #c6c7d4
+  color: #c6c7d4 !important;
 }
 
 
 .hero-area h1 span{
-  color: #c9ad31;
+  color: #c9ad31 !important;
 }
 
 /******* PORTFOLIO SECTION ******/

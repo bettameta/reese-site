@@ -141,7 +141,8 @@ img{
 
 h3{
   font-size: 1.2em;
-  color: #c9ad31 !important;
+  margin: 20px 0 0 5px;
+  color: #c9ad31;
   text-align: center;
   font-family:'Source Code Pro', sans-serif;
 }
@@ -179,10 +180,10 @@ header div{
   flex-flow: row wrap;
 }
 
-header div h3{
-  font-size: 1.875em;
+header div h2{
+  font-size: 1.6em;
   margin: 25px 0 0 0;
-  
+  color: #c9ad31;
 }
 
 header div p{
@@ -245,12 +246,12 @@ h1{
   padding: 80px 20px 60px 20px;
   margin: 0;
   width: 45%;
-  color: #c6c7d4 !important;
+  color: #c6c7d4;
 }
 
 
-.hero-area h1 span{
-  color: #c9ad31 !important;
+h1 span{
+  color: #c9ad31;
 }
 
 /******* PORTFOLIO SECTION ******/
@@ -266,9 +267,9 @@ h1{
   border: 3px solid #c9ad31;
 }
 
-#portfolio .content-wrapper h3{
+/*#portfolio h3{
   margin: 20px 0 0 0;
-}
+}*/
 
 #portfolio h2{
   font-size: .8em;
@@ -304,9 +305,9 @@ h1{
   color: #d4d7f5
 }
 
-#about-me h3{
+/*#about-me h3{
   margin: 20px 0 5px;
-}
+}*/
 
 
 /************ FOOTER ********/
@@ -522,7 +523,7 @@ footer .copyright h5{
 
   /******** TAB HERO AREA *********/
 
-  .hero-area h1{
+  h1{
     
     padding: 60px 20px 100px 20px;
   }

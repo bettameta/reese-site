@@ -107,6 +107,10 @@ ul{
 
 a{
   text-decoration: none;
+  color: #ac4e6f;
+}
+
+nav a{
   color: #c9ad31;
 }
 
@@ -169,19 +173,15 @@ header{
 header .content-wrapper{
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-
-header div{
-  display: flex;
-  justify-content: center;
   align-content: center;
   flex-flow: row wrap;
 }
 
+
+
 header div h2{
-  font-size: 1.6em;
+  font-size: 2em;
+  text-align: center;
   margin: 25px 0 0 0;
   color: #c9ad31;
 }
@@ -191,7 +191,7 @@ header div p{
   justify-content: center;
   flex-flow: row wrap;
   width: 100%;
-  font-size: .9em;
+  font-size: 1em;
   text-align: center;
 }
 
@@ -459,14 +459,14 @@ footer .copyright h5{
 @media only screen and (min-width: 768px){
   /*----------- TAB GENERAL STYLES ------------------*/
     .content-wrapper{
-      max-width: 640px;
+      max-width: 700px;
       margin: 100px 0;
     }
 
   /********** TAB GENERAL FONT INFO  ****/
 
   h3{
-    font-size: 1.75em;
+    font-size: 1.9em;
     
   }
 
@@ -475,31 +475,24 @@ footer .copyright h5{
   }
 
   p{
-    font-size: 1em;
+    font-size: 1.2em;
     line-height: 1.6em;
   }
 
   /********** TAB HEADER ***********/
 
   header .content-wrapper{
-    margin: 15px;
-    width: 90%;
+    margin: 15px 0;
+    width: 95%;
   }
   
   header div h2{
-    font-size: 1.875em;
-  }
-
-  header div{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-flow: row wrap;
+    font-size: 2.5em;
   }
 
   header div p{
-    width: 90%;
-    font-size: 1em;
+    width: 100%;
+    font-size: 1.7em;
   
   }
 
@@ -520,6 +513,8 @@ footer .copyright h5{
     font-size: 1.5em;
     margin-top: 5px; 
   }
+  
+ 
 
   /******** TAB HERO AREA *********/
 
@@ -532,10 +527,13 @@ footer .copyright h5{
     margin: 50px 0;
   }
 
+ 
+
   /******** TAB PORTFOLIO *********/
 
   #portfolio .content-wrapper{
     margin: 25px 0;
+    width: 100%;
   }
 
   #portfolio .divider{
@@ -546,6 +544,9 @@ footer .copyright h5{
     padding: 0 20px;
   }
 
+  #portfolio p{
+    font-size: 1.3em;
+  }
 
   #portfolio figure img{
     border: 5px solid ;
@@ -553,7 +554,7 @@ footer .copyright h5{
   }
 
   #portfolio h2{
-    font-size:  1em;
+    font-size:  1.5em;
   }
 
   /******* TAB ABOUT ME ****/
@@ -562,7 +563,12 @@ footer .copyright h5{
     margin: 25px 0;
   }
 
+  #about-me h3{
+    font-size: 1.9em;
+  }
+
   #about-me p{
+    font-size: 1.3em;
     padding: 20px 0 80px 20px;
   }
 
@@ -576,21 +582,22 @@ footer .copyright h5{
   footer .content-wrapper{
     width: 100%;
     margin: 30px 0;
-    justify-content: center;
+   
   }
 
   #contact-me{
     display: flex;
     justify-content: space-between;
-  
+    width: 100%;
   }
 
-  footer h3{
-    font-size: 1.5em;
+  footer .contact h3,
+  footer .social h3{
+    font-size: 1.9em;
   }
   /* PADDING MAIL ICONS*/
   footer p{
-    font-size: 2em;
+    font-size: 2.7em;
     padding: 0 40px;
   }
 
@@ -607,11 +614,10 @@ footer .copyright h5{
   footer .social-icons{
     display: flex;
     justify-content: space-around;
-  
   }
 
   footer .social-icons p{
-    font-size: 2em;
+    font-size: 2.7em;
     padding: 0 10px 0 10px;
   }
 

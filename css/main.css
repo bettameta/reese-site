@@ -110,12 +110,12 @@ a{
   text-decoration: none;
   color: #c9ad31;
 }
-
+/* FOOTER SOCIAL ICON COLORS AND DEC */
 footer a{
   text-decoration: none;
   color: #ac4e6f;
 }
-
+/* NAV COLOR AND DEC */
 nav a{
   text-decoration: none;
   color: #c9ad31;
@@ -270,6 +270,7 @@ h1 span{
   flex-flow: row wrap;
 }
 
+/* IMG BORDER COLOR AND WIDTH */
 #portfolio figure img a{
   border: 3px solid #c9ad31;
 }

@@ -96,8 +96,8 @@ html{
 body{
   font-family: 'Montserrat' , sans-serif;
   font-size: 1em;
-  color: #c6c7d4;
-  background-color: #242420;
+  color: #aeafbb;
+  background-color: #1a1a17;
  
 }
 
@@ -113,7 +113,7 @@ a{
 /* FOOTER SOCIAL ICON COLORS AND DEC */
 footer a{
   text-decoration: none;
-  color: #dacbae;
+  color: #a03f62;
 }
 /* NAV COLOR AND DEC */
 nav a{
@@ -131,7 +131,7 @@ nav a{
 
 /** HERO BACKGROUND IMAGE **/
 .hero-area{
-  background: url(../img/hero-img-bg.png) center no-repeat #7e867f;
+  background: url(../img/hero-background.png) center no-repeat #7e867f;
   background-size: cover;
   width: 100%;
 }
@@ -254,12 +254,12 @@ h1{
   padding: 80px 20px 150px 20px;
   margin-left: 5%;
   width: 43%;
-  color: #44443e;
+  color: #bdbd9f;
 }
 
 
 h1 span{
-  color: #c4a105;
+  color: #dab308;
 }
 
 /******* PORTFOLIO SECTION ******/
@@ -309,7 +309,7 @@ h1 span{
   align-items: center;
   margin: 20px 0 90px 20px;
   width: 85%;
-  color: #44443e
+  color: #252522
 }
 
 /*#about-me h3{

@@ -185,11 +185,11 @@ header .content-wrapper{
 
 
 
-header div h2{
+header h2{
   font-size: 2em;
   text-align: center;
   margin: 25px 0 0 0;
-  color: #bf992f;
+  color: #e2bb0d;
 }
 
 header div p{
@@ -493,7 +493,7 @@ footer .copyright h5{
     width: 95%;
   }
   
-  header div h2{
+  header h2{
     font-size: 2.5em;
   }
 
@@ -667,7 +667,7 @@ footer .copyright h5{
     line-height: 1.8em;
   }
 
-  header div h2{
+  header h2{
     font-size: 2.5em;
   }
 

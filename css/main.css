@@ -96,9 +96,8 @@ html{
 body{
   font-family: 'Montserrat' , sans-serif;
   font-size: 1em;
-  color: #aeafbb;
+  color: #d0d1db;
   background-color: #1a1a17;
- 
 }
 
 ul{
@@ -113,7 +112,7 @@ a{
 /* FOOTER SOCIAL ICON COLORS AND DEC */
 footer a{
   text-decoration: none;
-  color: #a03f62;
+  color: #e2bb0d;
 }
 /* NAV COLOR AND DEC */
 nav a{
@@ -259,7 +258,7 @@ h1{
 
 
 h1 span{
-  color: #dab308;
+  color: #e2bb0d;
 }
 
 /******* PORTFOLIO SECTION ******/

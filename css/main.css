@@ -97,7 +97,7 @@ body{
   font-family: 'Montserrat' , sans-serif;
   font-size: 1em;
   color: #d0d1db;
-  background-color: #1a1a17;
+  background-color: #0f0e0f;
 }
 
 ul{
@@ -108,6 +108,7 @@ ul{
 a{
   text-decoration: none;
   color: #bf992f;
+  
 }
 /* FOOTER SOCIAL ICON COLORS AND DEC */
 footer a{

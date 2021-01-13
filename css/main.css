@@ -272,7 +272,7 @@ h1 span{
 }
 
 /* IMG BORDER COLOR AND WIDTH */
-#portfolio figure img a{
+#portfolio figure img{
   border: 3px solid #bf992f;
 }
 

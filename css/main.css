@@ -96,8 +96,8 @@ html{
 body{
   font-family: 'Montserrat' , sans-serif;
   font-size: 1em;
-  color: #d0d1db;
-  background-color: #0f0e0f;
+  color: #dadbd0;
+  background-color: #18181a;
 }
 
 ul{
@@ -131,7 +131,7 @@ nav a{
 
 /** HERO BACKGROUND IMAGE **/
 .hero-area{
-  background: url(../img/hero-background.png) center no-repeat #3e3f3e;
+  background: url(../img/hero2-background.png) center no-repeat #3e3f3e;
   background-size: cover;
   width: 100%;
 }
@@ -148,12 +148,19 @@ img{
   width: 100%;
 }
 
+/* IMG BORDER COLOR AND WIDTH */
+#portfolio figure img{
+  border: 5px solid; 
+}
+
 /********** GENERAL FONT INFO  ****/
 
 h3{
-  font-size: 1.2em;
-  margin: 20px 0 0 5px;
+  font-size: 1.5em;
+  margin: 35px 0 0 5px;
+  /* REMOVING COLOR SO IT STANDS OUT MORE
   color: #bf992f;
+  */
   text-align: center;
   font-family:'Source Code Pro', sans-serif;
 }
@@ -198,13 +205,13 @@ header div p{
   justify-content: center;
   flex-flow: row wrap;
   width: 100%;
-  font-size: 1em;
+  font-size: 1.2em;
   text-align: center;
 }
 
 
 .header-divider{
-  background-color: #363535;
+  background-color: #646363;
   height: 2px;
   width: 100%;
 }
@@ -251,15 +258,15 @@ header nav ul li{
 h1{
   font-size: 2em;
   font-family: 'Source Code Pro', sans-serif;
-  padding: 80px 20px 150px 20px;
+  padding: 80px 20px 50px 20px;
   margin-left: 5%;
-  width: 43%;
-  color: #bdbd9f;
+  width: 47%;
+  color: #faf49e;
 }
 
 
 h1 span{
-  color: #e2bb0d;
+  color: #f8cc0a;
 }
 
 /******* PORTFOLIO SECTION ******/
@@ -271,13 +278,8 @@ h1 span{
   flex-flow: row wrap;
 }
 
-/* IMG BORDER COLOR AND WIDTH */
-#portfolio figure img{
-  border: 3px solid #bf992f;
-}
-
 #portfolio h2{
-  font-size: .8em;
+  font-size: 1.2em;
   text-align: center;
   color: #c6c7d4
 }
@@ -299,20 +301,22 @@ h1 span{
   justify-content: center;
   flex-flow: row wrap;
 }
+/* REMOVING COLOR SO IT IS UNIFORM AND STANDS OUT
 #about-me h3{
-  color: #252522
+  color: #0c0c0c
 }
-
+*/
 #about-me p{
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 20px 0 90px 20px;
   width: 85%;
-  color: #252522
+  color: #0c0c0c
 }
 
-/*#about-me h3{
+/* REMOVED DUE TO CONFLICT
+#about-me h3{
   margin: 20px 0 5px;
 }*/
 
@@ -336,16 +340,14 @@ footer .content-wrapper{
   padding: 0;
 }
 
-footer h3{
-  font-size: 1em;
-}
+
 
 /* PADDING AROUND & ALL ICONS */
 footer p{
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.2em;
+  font-size: 1.5em;
   margin: 0;
   padding: 0 20px 0 20px;
   
@@ -474,7 +476,7 @@ footer .copyright h5{
   /********** TAB GENERAL FONT INFO  ****/
 
   h3{
-    font-size: 1.9em;
+    font-size: 2em;
     
   }
 
@@ -528,7 +530,7 @@ footer .copyright h5{
 
   h1{
     
-    padding: 60px 20px 100px 20px;
+    padding: 80px 30px 20px 30px;
   }
 
   .hero-area .content-wrapper{
@@ -557,7 +559,7 @@ footer .copyright h5{
   }
 
   #portfolio figure img{
-    border: 5px solid ;
+    border: 5px solid;
     margin-right: 20px;
   }
 
@@ -669,7 +671,7 @@ footer .copyright h5{
   }
 
   header h2{
-    font-size: 2.5em;
+    font-size: 2.7em;
   }
 
   #portfolio article{

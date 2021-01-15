@@ -104,7 +104,6 @@ ul{
   list-style-type: none;
 }
 
-
 a{
   text-decoration: none;
   color: #bf992f;
@@ -166,8 +165,9 @@ h3{
 }
 
 p{
-  font-size: .9em;
-  line-height: 1.27em;
+  font-size: 1em;
+  line-height: 1.5em;
+
 }
 
 
@@ -194,7 +194,7 @@ header .content-wrapper{
 
 
 header h2{
-  font-size: 2em;
+  font-size: 1.8em;
   text-align: center;
   margin: 25px 0 0 0;
   color: #e2bb0d;
@@ -239,7 +239,7 @@ header nav ul{
 }
 
 header nav ul li{
-  font-size: .9em;
+  font-size: 1.2em;
   margin-top: 5px;
   
 }
@@ -289,12 +289,12 @@ h1 span{
 }
 
 #portfolio article p{
-  padding: 0 20px;
+  padding: 0 42px;
 }
 
 #portfolio .divider{
   background-color: #bf992f;
-  height: 1px;
+  height: 3px;
   width: 90%;
 }
 
@@ -305,11 +305,7 @@ h1 span{
   justify-content: center;
   flex-flow: row wrap;
 }
-/* REMOVING COLOR SO IT IS UNIFORM AND STANDS OUT
-#about-me h3{
-  color: #0c0c0c
-}
-*/
+
 #about-me p{
   display: flex;
   justify-content: center;
@@ -318,12 +314,6 @@ h1 span{
   width: 85%;
   color: #0c0c0c
 }
-
-/* REMOVED DUE TO CONFLICT
-#about-me h3{
-  margin: 20px 0 5px;
-}*/
-
 
 /************ FOOTER ********/
 
@@ -480,7 +470,7 @@ footer .copyright h5{
   /********** TAB GENERAL FONT INFO  ****/
 
   h3{
-    font-size: 2em;
+    font-size: 2.2em;
     
   }
 
@@ -501,12 +491,12 @@ footer .copyright h5{
   }
   
   header h2{
-    font-size: 2.5em;
+    font-size: 2.9em;
   }
 
   header div p{
     width: 100%;
-    font-size: 1.7em;
+    font-size: 1.8em;
   
   }
 
@@ -524,7 +514,7 @@ footer .copyright h5{
   }
   
   header nav ul li{
-    font-size: 1.5em;
+    font-size: 1.8em;
     margin-top: 5px; 
   }
   
@@ -577,9 +567,9 @@ footer .copyright h5{
     margin: 25px 0;
   }
 
-  #about-me h3{
+  /*#about-me h3{
     font-size: 1.9em;
-  }
+  }*/
 
   #about-me p{
     font-size: 1.3em;
@@ -605,10 +595,11 @@ footer .copyright h5{
     width: 100%;
   }
 
+  /*  REMOVING DUE TO CONFLICT 
   footer .contact h3,
   footer .social h3{
     font-size: 1.9em;
-  }
+  }*/
   /* PADDING MAIL ICONS*/
   footer p{
     font-size: 2.7em;
@@ -649,13 +640,13 @@ footer .copyright h5{
 @media only screen and (min-width: 1200px){
   /*----------- GENERAL STYLES ------------------*/
 .content-wrapper{
-  max-width: 1000px;
+  max-width: 1100px;
 } 
 
   /******* DESK FONTS ************/
 
   h3{
-    font-size: 2.25em;
+    font-size: 2.8em;
     
   }
 
@@ -675,7 +666,7 @@ footer .copyright h5{
   }
 
   header h2{
-    font-size: 2.7em;
+    font-size: 3.5em;
   }
 
   #portfolio article{
@@ -696,19 +687,20 @@ footer .copyright h5{
   }
 
 /********* DESK HEADER ********/
-  
+
+
   header div h3{
     font-size: 2.7em;
   }
 
 
   header div p{
-    font-size: 1.875em;
+    font-size: 2.2em;
+  }
+  header nav ul li{
+    font-size: 2.2em;
   }
 
-  nav ul{
-    font-size: 1.2em;
-  }
 
   /****** DESK PORTFOLIO ******/
 
@@ -720,6 +712,10 @@ footer .copyright h5{
     align-items: center;
   }
 
+  #portfolio article h2{
+    margin-left: 25px;
+  }
+
   #portfolio article div{
     width: 46%;
   }
@@ -729,7 +725,7 @@ footer .copyright h5{
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    width: 45%;
+    width: 46%;
   }
 
   #portfolio .divider{

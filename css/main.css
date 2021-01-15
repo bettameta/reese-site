@@ -158,11 +158,11 @@ img{
 h3{
   font-size: 1.5em;
   margin: 35px 0 0 5px;
+  text-align: center;
+  font-family:'Source Code Pro', sans-serif;
   /* REMOVING COLOR SO IT STANDS OUT MORE
   color: #bf992f;
   */
-  text-align: center;
-  font-family:'Source Code Pro', sans-serif;
 }
 
 p{
@@ -282,6 +282,10 @@ h1 span{
   font-size: 1.2em;
   text-align: center;
   color: #c6c7d4
+}
+
+#portfolio article{
+  padding: 7% 0;
 }
 
 #portfolio article p{
@@ -551,7 +555,7 @@ footer .copyright h5{
   }
 
   #portfolio article{
-    padding: 0 20px;
+    padding: 7% 0;
   }
 
   #portfolio p{
@@ -675,8 +679,9 @@ footer .copyright h5{
   }
 
   #portfolio article{
-    margin: 40px 0 60px 0;
+    padding: 5% 0;
   }
+
   /********** DESK IMG *************/
 
   /** HERO BACKGROUND IMAGE **/

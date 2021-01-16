@@ -130,7 +130,7 @@ nav a{
 
 /** HERO BACKGROUND IMAGE **/
 .hero-area{
-  background: url(https://i.postimg.cc/2y21mCDx/hero2-background.png) center no-repeat #3e3f3e;
+  background: url(../img/hero2-background.jpg) center no-repeat #18181a;
   background-size: cover;
   width: 100%;
 }
@@ -138,7 +138,7 @@ nav a{
   /** ABOUT ME BACKGROUND IMAGE **/
 
   #about-me{
-  background: url(../img/about-me.png) center no-repeat #3e3f3e;
+  background: url(../img/about-me.jpg) center no-repeat #18181a;
   background-size: cover;
   width: 100%; 
 }

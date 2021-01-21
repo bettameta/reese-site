@@ -3,60 +3,114 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Page Not Found</title>
+  <title>404 Page Not Found</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    * {
-      line-height: 1.2;
-      margin: 0;
-    }
 
-    html {
-      color: #888;
-      display: table;
-      font-family: sans-serif;
-      height: 100%;
-      text-align: center;
-      width: 100%;
-    }
-
-    body {
-      display: table-cell;
-      vertical-align: middle;
-      margin: 2em auto;
-    }
-
-    h1 {
-      color: #555;
-      font-size: 2em;
-      font-weight: 400;
-    }
-
-    p {
-      margin: 0 auto;
-      width: 280px;
-    }
-
-    @media only screen and (max-width: 280px) {
-
-      body,
-      p {
-        width: 95%;
-      }
-
-      h1 {
-        font-size: 1.5em;
-        margin: 0 0 0.3em;
-      }
-
-    }
-  </style>
 </head>
 
 <body>
-  <h1>Page Not Found</h1>
-  <p>Sorry, but the page you were trying to view does not exist.</p>
+  <div class="container">
+    <div class="text">
+      <h1>Sorry, but the page you were trying to view does not exist.</h1>
+    </div>
+    
+      <div class="error">
+        <img src="img/error-404-orange.jpg" alt="ice cream dropped"/>
+      </div>
+  </div>
+
+  <div class="button">
+    <a href="https://bettameta.com">Home</a>
+  </div>
 </body>
+
+<style>
+ 
+  html {
+    font-family: sans-serif;
+    margin: 0;
+  }
+
+  body {
+    background-color: #18181a;
+  }
+
+  .container{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+
+  .text h1{
+    color: #dadbd0;
+    font-size: 1em;
+    font-weight: 400;
+    padding-top: 3em;
+    padding-bottom: 1em;
+    text-align: center;
+  }
+  .error img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;  
+  }
+
+  .button{
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5em;
+  }
+
+  .button a{
+    background-color: #1d8ae4;
+    border: #dadbd0 2px solid;
+    color: #edeee5;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    padding: .6em;
+    width: 60%;
+    cursor: pointer;
+    border-radius: 50px;
+    
+  }
+  .button a:hover{
+    background-color: #37973a;
+  }
+
+   @media only screen and (min-width: 768px) {
+    
+    .container{
+      max-width: 700px;
+
+    } 
+    .text h1 {
+      font-size: 2em;
+      width: 100%;
+    }
+
+    .button a{
+      font-size: 2em;
+    }
+  }
+  @media only screen and (min-width: 1200px) {
+    
+    .container{
+      max-width: 1100px;
+    }
+    
+    .text h1 {
+      font-size: 2.5em;
+
+    }
+    .button a{
+      font-size: 2.5em;
+    } 
+  } 
+</style>
 
 </html>
 <!-- IE needs 512+ bytes: https://docs.microsoft.com/archive/blogs/ieinternals/friendly-http-error-pages -->

@@ -262,6 +262,7 @@ h1{
   margin-left: 5%;
   width: 47%;
   color: #faf49e;
+  text-shadow: 1px 1px #18181a;
 }
 
 
@@ -281,7 +282,7 @@ h1 span{
 #portfolio h2{
   font-size: 1.2em;
   text-align: center;
-  color: #c6c7d4
+  color: #c6c7d4;
 }
 
 #portfolio article{
@@ -304,6 +305,7 @@ h1 span{
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  text-shadow: .3px .3px #363680;
 }
 
 #about-me p{
@@ -312,7 +314,8 @@ h1 span{
   align-items: center;
   margin: 50px 0 110px 20px;
   width: 90%;
-  color: #0c0c0c
+  color: #c6c7d4;
+  text-shadow: .4px .4px #363680;
 }
 
 /************ FOOTER ********/

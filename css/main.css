@@ -310,7 +310,7 @@ h1 span{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px 0 90px 20px;
+  margin: 50px 0 110px 20px;
   width: 85%;
   color: #0c0c0c
 }
@@ -682,8 +682,8 @@ footer .copyright h5{
 
   /** TAB ABOUT ME BACKGROUND IMAGE **/
 
-  #about-me{
-  height: 600px;  
+  #about-me p{
+    width: 75%;
   }
 
 /********* DESK HEADER ********/

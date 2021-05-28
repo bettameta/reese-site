@@ -368,14 +368,14 @@ footer .social-icons{
 
 /* COPYRIGHT */
 .copyright{
-  margin: 10px 30px 0 30px;
+  margin: 25px 30px 0 30px;
   width: 100%;
 }
 
 .copyright h5{
   text-align: center;
-  margin: 10px 0px;
-  font-size: .1em;
+  margin: 20px 0px;
+  font-size: .4em;
   color: #bf992f
 }
 
@@ -628,11 +628,15 @@ footer .social-icons{
 }
 
   /* COPYRIGHT */
-  #copyright h5{
+  .copyright h5{
     margin: 20px 0 10px 0;
-    font-size: .8em;
-  
+    font-size: .7em;
   }
+
+  .copyright{
+    margin-top: 50px;
+  }
+  
 
 }
   /*----------------------------------------------------
@@ -755,9 +759,12 @@ footer .social-icons{
 
   }
 
+  .copyright{
+    margin-top: 70px;
+  }
   footer .copyright h5{
     margin: 10px 0 20px 0;
-    font-size: 1em;
+    font-size: .9em;
   }
 
 }

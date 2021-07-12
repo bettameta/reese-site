@@ -272,6 +272,7 @@ h1 span{
 
 /******* PORTFOLIO SECTION ******/
 
+
 #portfolio{
   display: flex;
   justify-content: center;
@@ -289,7 +290,7 @@ h1 span{
   padding: 7% 0;
 }
 
-#portfolio article p{
+#portfolio p{
   padding: 0 42px;
 }
 
@@ -482,7 +483,7 @@ footer .social-icons{
   /********** TAB GENERAL FONT INFO  ****/
 
   h3{
-    font-size: 1.7em;
+    font-size: 2em;
     
   }
 
@@ -659,11 +660,7 @@ footer .social-icons{
     font-size: 4.5em;
   }
 
-  #portfolio h2{
-    font-size:  1.5em;
-    text-align: left;
-    padding-left: 17px;
-  }
+
 
   p{
     font-size: 1.3em;
@@ -709,6 +706,12 @@ footer .social-icons{
 
   /****** DESK PORTFOLIO ******/
 
+  #portfolio h2{
+    font-size:  1.5em;
+    text-align: left;
+    padding-left: 17px;
+    margin-left: 25px;
+  }
 
   #portfolio article{
     display: flex;
@@ -717,9 +720,9 @@ footer .social-icons{
     align-items: center;
   }
 
-  #portfolio article h2{
+  /*#portfolio article h2{
     margin-left: 25px;
-  }
+  }*/
 
   #portfolio article div{
     width: 46%;

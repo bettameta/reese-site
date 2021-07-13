@@ -120,6 +120,7 @@ nav a{
   color: #bf992f;
 }
 
+/*  CONTENT WRAPPER  */
 .content-wrapper{
   width: 95%;
   margin: 0;
@@ -149,7 +150,8 @@ img{
 
 /* IMG BORDER COLOR AND WIDTH */
 #portfolio figure img{
-  border: 5px solid; 
+  border: 5px solid;
+ 
 }
 
 /********** GENERAL FONT INFO  ****/
@@ -287,7 +289,7 @@ h1 span{
 }
 
 #portfolio article{
-  padding: 7% 0;
+  padding: 2%;
 }
 
 #portfolio p{
@@ -333,17 +335,11 @@ footer .content-wrapper{
   display: flex;
   justify-content: center;
   align-content: center;
-  margin: 0;
+  margin: 80px;
   padding: 0;
 }
 
-
-
 /* PADDING AROUND & ALL ICONS */
-footer .content-wrapper{
-  margin: 30px; 
-}
-
 footer p{
   display: flex;
   justify-content: center;
@@ -476,8 +472,8 @@ footer .social-icons{
 @media only screen and (min-width: 768px){
   /*----------- TAB GENERAL STYLES ------------------*/
     .content-wrapper{
-      max-width: 700px;
       margin: 100px 0;
+      max-width: 900px
     }
 
   /********** TAB GENERAL FONT INFO  ****/
@@ -549,16 +545,18 @@ footer .social-icons{
   /******** TAB PORTFOLIO *********/
 
   #portfolio .content-wrapper{
-    margin: 25px 0;
-    width: 100%;
+    margin: 2%;
+  }
+  
+
+  #portfolio h2{
+    font-size:  1.5em;
   }
 
-  #portfolio .divider{
-    height: 3px;
-  }
 
   #portfolio article{
-    padding: 7% 0;
+    padding: 10%;
+    
   }
 
   #portfolio p{
@@ -566,13 +564,13 @@ footer .social-icons{
   }
 
   #portfolio figure img{
-    border: 5px solid;
-    margin-right: 20px;
+    width: 100%;
   }
 
-  #portfolio h2{
-    font-size:  1.5em;
+  #portfolio .divider{
+    height: 3px;
   }
+  
 
   /******* TAB ABOUT ME ****/
 
@@ -599,7 +597,7 @@ footer .social-icons{
 
   footer .content-wrapper{
     width: 100%;
-    margin: 0;
+    margin-top: 80px;
    
   }
 
@@ -672,7 +670,7 @@ footer .social-icons{
   }
 
   #portfolio article{
-    padding: 5% 0;
+    padding: 5%;
   }
 
   /********** DESK IMG *************/
@@ -706,6 +704,16 @@ footer .social-icons{
 
   /****** DESK PORTFOLIO ******/
 
+  #portfolio .content-wrapper{
+    width: 90%;
+  }
+
+  /***** ALTERNATING PORTFOLIO CONTENT SIDE BY SIDE ON DESKTOPS  *****/
+  #portfolio .content-wrapper-flip article{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
   #portfolio h2{
     font-size:  1.5em;
     text-align: left;
@@ -719,10 +727,6 @@ footer .social-icons{
     flex-flow: row wrap;
     align-items: center;
   }
-
-  /*#portfolio article h2{
-    margin-left: 25px;
-  }*/
 
   #portfolio article div{
     width: 46%;

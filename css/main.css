@@ -376,6 +376,46 @@ footer .social-icons{
   color: #bf992f
 }
 
+/* BACK TO TOP BUTTON STYLES */
+.back-to-top {
+	margin: 0;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	width: 40px;
+	height: 40px;
+	z-index: 100;
+	display: none;
+	text-decoration: none;
+	color: #ffffff;
+	/*Creates the colored box around the arrow (optional) */
+	background-color: #e2bb0d;
+	/* Don't like this arrow type?  Paste in your own image URL here instead */
+	background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/259273/up-arrow2.svg");
+	/* Controls the size of the arrow inside the box */
+	background-size: 40% auto;
+	background-repeat: no-repeat;
+	background-position: center center;
+	transition: .3s background-color ease-in-out;
+}
+
+.back-to-top:hover, .back-to-top:focus {
+	background-color: #1d8ae4;
+}
+ 
+/*This is hides the Back to Top text in the link, but keeps it for accessibility purposes */
+.visually-hidden {
+		position: absolute !important;
+    height: 1px; width: 1px; 
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    
+}
+
+
 
 /* ==========================================================================
     Helper classes

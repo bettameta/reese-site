@@ -346,7 +346,7 @@ footer p{
   align-items: center;
   font-size: 1.5em;
   margin: 0;
-  padding: 0 10% 0 10%;
+  padding: 0 7% 0 7%;
   
 }
 
@@ -655,7 +655,7 @@ footer p{
   align-items: center;
   font-size: 2em;
   margin: 0;
-  padding: 0 10% 0 10%;
+  padding: 0 7% 0 7%;
   }
 
 /* CONFINES OF SOCIAL ICONS AS A GROUP */
@@ -800,9 +800,9 @@ footer .social-icons{
     padding-right: 2%;
   }
 
-  footer .social-icons p{
+  footer p{
     font-size: 2.3em;
-    padding: 0 15% 0 15%;
+    padding: 0 7% 0 7%;
 
   }
 

@@ -96,8 +96,12 @@ html{
 body{
   font-family: 'Montserrat' , sans-serif;
   font-size: 1em;
-  color: #dadbd0;
+  /*color: #dadbd0;
   background-color: #18181a;
+  */
+  color: #dadbd0;
+  background-color: #000;
+  /*background-color: #18181a;*/
 }
 
 ul{
@@ -118,6 +122,11 @@ footer a{
 nav a{
   text-decoration: none;
   color: #bf992f;
+}
+
+nav a:hover{
+  text-decoration: underline;
+  color: #1d8ae4;
 }
 
 /*  CONTENT WRAPPER  */
@@ -586,6 +595,9 @@ footer .social-icons{
     margin: 2%;
   }
   
+  #portfolio h3{
+    margin: 10% 0 -3% 0;
+  }
 
   #portfolio h2{
     font-size:  1.5em;
@@ -688,7 +700,7 @@ footer .social-icons{
   /******* DESK FONTS ************/
 
   h3{
-    font-size: 2.8em;
+    font-size: 2.5em;
     
   }
 
@@ -725,11 +737,6 @@ footer .social-icons{
   }
 
 /********* DESK HEADER ********/
-
-
-  header div h3{
-    font-size: 2.7em;
-  }
 
 
   header div p{
@@ -780,10 +787,6 @@ footer .social-icons{
 
   #portfolio .divider{
     height: 0px;
-  }
-
-  h3{
-    font-size: 2.4em;
   }
 
   /******* DESK FOOTER *******/

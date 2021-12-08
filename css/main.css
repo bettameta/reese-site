@@ -158,7 +158,7 @@ img{
 
 h3{
   font-size: 1.2em;
-  margin: 35px 0 0 5px;
+  margin-top: 35px;
   text-align: center;
   font-family:'Source Code Pro', sans-serif;
   /* REMOVING COLOR SO IT STANDS OUT MORE
@@ -641,8 +641,8 @@ footer .social-icons{
 
   #contact-me{
     display: flex;
-    justify-content: space-between;
-    width: 90%;
+    justify-content: space-around;
+    width: 100%;
   }
 
  
@@ -789,13 +789,9 @@ footer .social-icons{
   /******* DESK FOOTER *******/
 
   footer .content-wrapper{
-    width: 90%;
-    
-  }
-
-  #contact-me{
-    width: 70%;
-    padding-right: 2%;
+    width: 80%;
+    margin: 60px;
+    padding: 0;
   }
 
   footer p{

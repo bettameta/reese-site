@@ -332,10 +332,8 @@ footer{
 }
 
 footer .content-wrapper{
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  margin: 80px;
+  width: 30%;
+  margin: 60px;
   padding: 0;
 }
 
@@ -347,7 +345,7 @@ footer p{
   font-size: 1.5em;
   margin: 0;
   padding: 0 7% 0 7%;
-  
+
 }
 
 .footer h3{
@@ -636,9 +634,9 @@ footer .social-icons{
   }
 
   footer .content-wrapper{
-    width: 100%;
-    margin-top: 80px;
-   
+      width: 70%;
+      margin: 60px;
+      padding: 0;
   }
 
   #contact-me{

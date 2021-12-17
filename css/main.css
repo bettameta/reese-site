@@ -370,6 +370,7 @@ footer .social-icons{
   align-items: center; 
 }
 
+
 /* COPYRIGHT */
 .copyright{
   margin: 25px 30px 0 30px;
@@ -657,7 +658,6 @@ footer .social-icons{
     width: 100%;
   }
 
- 
 /* PADDING AROUND & ALL ICONS */
 footer p{
   display: flex;

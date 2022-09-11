@@ -400,9 +400,9 @@ footer .social-icons{
 	color: #ffffff;
 	/*Creates the colored box around the arrow (optional) */
 	background-color: #e2bb0d;
-	/* Don't like this arrow type?  Paste in your own image URL here instead */
+	/* Arrow */
 	background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/259273/up-arrow2.svg");
-	/* Controls the size of the arrow inside the box */
+	/* Arrow size */
 	background-size: 40% auto;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -422,6 +422,11 @@ footer .social-icons{
     clip: rect(1px, 1px, 1px, 1px);
     
 }
+
+
+
+
+
 
 
 

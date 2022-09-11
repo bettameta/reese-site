@@ -4,7 +4,7 @@ jQuery(document).ready(function() {
    // This number controls now far down when scrolling the arrow appears //
    var offset = 250;
    // This nubmer controls the duration of the fade in and out //
-   var duration = 300;
+   var duration = 500;
    jQuery(window).scroll(function() {
       if (jQuery(this).scrollTop() > offset) {
       jQuery('.back-to-top').fadeIn(duration);

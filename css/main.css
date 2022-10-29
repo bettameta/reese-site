@@ -140,7 +140,8 @@ nav a:hover{
 
 /** HERO BACKGROUND IMAGE **/
 .hero-area{
-  background: url(../img/hero2-background.jpg) center no-repeat #18181a;
+  background: url(../img/hero-test-3.jpg), center no-repeat #7c691b;
+  background-blend-mode: overlay;
   background-size: cover;
   width: 100%;
 }

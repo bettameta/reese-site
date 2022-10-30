@@ -138,7 +138,8 @@ nav a:hover{
 
 /********** IMG *************/
 
-/** HERO BACKGROUND IMAGE **/
+/** HERO BACKGROUND IMAGE 
+Image by Danny Meneses via Pexels **/
 .hero-area{
   background: url(../img/hero-test-3.jpg), center no-repeat;
   background-blend-mode: overlay;

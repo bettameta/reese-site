@@ -408,7 +408,7 @@ footer .social-icons{
 	background-size: 40% auto;
 	background-repeat: no-repeat;
 	background-position: center center;
-	transition: .3s background-color ease-in-out;
+	transition: .7s background-color ease-in-out;
 }
 
 .back-to-top:hover, .back-to-top:focus {

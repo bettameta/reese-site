@@ -230,7 +230,6 @@ header div p{
 }
 
 header nav{
-  margin: 0;
   display: flex;
   justify-content: space-around;
   padding: 0 0 10px 0;
@@ -421,7 +420,7 @@ footer .social-icons{
     height: 1px; width: 1px; 
     overflow: hidden;
     clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-    clip: rect(1px, 1px, 1px, 1px);
+    
     
 }
 

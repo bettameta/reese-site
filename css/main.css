@@ -195,6 +195,7 @@ header{
   justify-content: center;
   align-content: center;
   flex-flow: row wrap;
+  margin-bottom: 30px;
 }
 
 header .content-wrapper{
@@ -221,7 +222,6 @@ header div p{
   font-size: 1.2em;
   text-align: center;
 }
-
 
 .header-divider{
   background-color: #646363;
@@ -255,6 +255,8 @@ header li{
   margin-top: 5px;
   
 }
+
+
 
 
 /*********** HERO SECTION *********/

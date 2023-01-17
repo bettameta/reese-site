@@ -380,7 +380,7 @@ footer .social-icons{
   width: 100%;
 }
 
-.copyright h5{
+.copyright h4{
   text-align: center;
   margin: 3px 0 0;
   font-size: .4em;
@@ -685,7 +685,7 @@ footer .social-icons{
 }
 
   /* COPYRIGHT */
-  .copyright h5{
+  .copyright h4{
     margin: 4px 0 0 0;
     font-size: .7em;
   }
@@ -814,7 +814,7 @@ footer .social-icons{
   .copyright{
     margin-top: 70px;
   }
-  footer .copyright h5{
+  footer .copyright h4{
     margin: 5px 0 0 0;
     font-size: .9em;
   }

@@ -349,6 +349,7 @@ h1 span{
 
   .pdf button:hover{
     background-color: #e2bb0da2;
+    transition: .7s background-color ease-in-out;
   }
 
 .pdf button a{

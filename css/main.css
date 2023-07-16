@@ -141,7 +141,7 @@ nav a:hover{
 /** HERO BACKGROUND IMAGE 
 Image by Danny Meneses via Pexels **/
 .hero-area{
-  background: url(../img/hero-test-3.jpg), center no-repeat;
+  background: url(../img/hero-computer.webp), center no-repeat;
   background-blend-mode: overlay;
   background-size: cover;
   width: 100%;
@@ -150,7 +150,7 @@ Image by Danny Meneses via Pexels **/
 /** ABOUT ME BACKGROUND IMAGE **/
 
 #about-me{
-  background-image: linear-gradient(rgba(0, 9, 14, .6),rgba(0, 9, 14, 0.2)) , url(../img/about-me.jpg);
+  background-image: linear-gradient(rgba(0, 9, 14, .6),rgba(0, 9, 14, 0.2)) , url(../img/about-me.webp);
   background-size: cover;
   width: 100%; 
 }
@@ -381,7 +381,6 @@ footer p{
   align-items: center;
   font-size: 1.5em;
   margin: 0;
-  padding: 0 7% 0 7%;
 
 }
 
@@ -703,13 +702,12 @@ footer p{
   align-items: center;
   font-size: 2em;
   margin: 0;
-  padding: 0 7% 0 7%;
   }
 
 /* CONFINES OF SOCIAL ICONS AS A GROUP */
 footer .social-icons{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center; 
   padding: 0 2% 0 5%;
 }
@@ -838,8 +836,6 @@ footer .social-icons{
 
   footer p{
     font-size: 2.3em;
-    padding: 0 7% 0 7%;
-
   }
 
   .copyright{

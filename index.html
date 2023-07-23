@@ -309,7 +309,7 @@
         </div>
         <!-- COPYRIGHT -->  
         <div class="copyright" style="padding-bottom: 3%;">
-          <h4>&copy;<a href="https://www.bettameta.com">Bettameta </a>| 2020 -&nbsp;<script>document.write(new Date().getFullYear());</script></h4> 
+          <h4>&copy;<a href="https://www.bettameta.com">Bettameta </a>| 2020 -&nbsp;<span id="currentYear"></span></h4> 
           <h4>Powered by Matcha 💚</h4>
         </div> 
       </footer>        
@@ -319,6 +319,11 @@
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+
+<!-- Update the year dynamically -->   
+    <script>
+      document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>

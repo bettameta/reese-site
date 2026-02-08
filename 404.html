@@ -1,116 +1,98 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <title>404 Page Not Found</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Web Developer and Web Designer utilizing key skills to reduce bounce rates and increase conversions for clients."> 
+  <meta name="keywords" content="WordPress web developer designer brand reduce bounce rates increase website conversions">
+  <link rel="icon" href="/img/square-eye.webp" type="image/webp">
 
+  <style>
+    html {
+      font-family: sans-serif;
+      margin: 0;
+    }
+    body {
+      background-color: #18181a;
+      margin: 0;
+      /* Centers the container vertically and horizontally */
+      display: flex;
+      flex-direction: column;
+      justify-content: center; 
+      align-items: center;
+      min-height: 100vh; /* Takes up the full height of the browser window */
+      padding: 2rem;     /* Prevents content from touching screen edges */
+      box-sizing: border-box;
+    }
+    .container {
+      width: 100%;
+      max-width: 800px; /* Constrains the width for better readability */
+      margin: 0 auto;
+    }
+    .text h1 {
+      color: #f7f7f7;
+      font-size: 1.2rem;
+      font-weight: 400;
+      padding-bottom: 2rem; /* Consistent spacing below the text */
+      text-align: center;
+      margin: 0;
+    }
+    .error img {
+      display: block;
+      margin: 0 auto;
+      width: 100%;  
+      max-width: 600px; /* Prevents the ice cream from becoming giant on monitors */
+      height: auto;
+    }
+    .button {
+      display: flex;
+      justify-content: center;
+      margin-top: 2.5em;
+    }
+    .button a {
+      background-color: transparent;
+      color: #f7f7f7;
+      border: 2px solid #f7f7f7;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 1.3rem;
+      padding: 12px 24px;
+      min-width: 200px; /* Better than 50% width for responsiveness */
+      cursor: pointer;
+      border-radius: 0; 
+      transition: background-color 0.3s ease;
+    }
+    .button a:hover {
+      background-color: #A5F3FC;
+      border: 2px solid #A5F3FC;
+      color: #0066cc;
+    }
+
+    /* Tablet */
+    @media only screen and (min-width: 768px) {
+      .text h1 { font-size: 1.6rem; }
+      .button a { font-size: 1.6rem; }
+    }
+    /* Large Desktop */
+    @media only screen and (min-width: 1400px) {
+      .text h1 { font-size: 2rem; }
+      .button a { font-size: 2rem; } 
+    }
+  </style>
 </head>
 
 <body>
-  <div class="container">
+  <main class="container">
     <div class="text">
-      <h1>Sorry, but the page you were trying to view does not exist.</h1>
+      <h1>The page you were trying to view does not exist.</h1>
     </div>
-    
-      <div class="error">
-        <img src="img/error-404-orange.jpg" alt="ice cream dropped"/>
-      </div>
-  </div>
-
-  <div class="button">
-    <a href="https://bettameta.com">ice cream</a>
-  </div>
+    <div class="error">
+      <img src="img/error-404-orange.webp" alt="404 Error - Dropped ice cream scoop"/>
+    </div>
+    <div class="button">
+      <a href="https://bettameta.com">Return Home</a>
+    </div>
+  </main>
 </body>
-
-<style>
- 
-  html {
-    font-family: sans-serif;
-    margin: 0;
-  }
-
-  body {
-    background-color: #18181a;
-  }
-
-  .container{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-  }
-
-  .text h1{
-    color: #dadbd0;
-    font-size: 1em;
-    font-weight: 400;
-    padding-top: 3em;
-    padding-bottom: 1em;
-    text-align: center;
-  }
-  .error img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;  
-  }
-
-  .button{
-    display: flex;
-    justify-content: center;
-    margin-top: 2.5em;
-  }
-
-  .button a{
-    background-color: #1d8ae4;
-    border: #dadbd0 2px solid;
-    color: #edeee5;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 1em;
-    padding: .3em .1em;
-    width: 30%;
-    cursor: pointer;
-    border-radius: 50px;
-    
-  }
-  .button a:hover{
-    background-color: #37973a;
-  }
-
-   @media only screen and (min-width: 768px) {
-    
-    .container{
-      max-width: 700px;
-
-    } 
-    .text h1 {
-      font-size: 2em;
-      width: 100%;
-    }
-
-    .button a{
-      font-size: 2em;
-    }
-  }
-  @media only screen and (min-width: 1200px) {
-    
-    .container{
-      max-width: 1100px;
-    }
-    
-    .text h1 {
-      font-size: 2.5em;
-
-    }
-    .button a{
-      font-size: 2.5em;
-    } 
-  } 
-</style>
-
 </html>
-<!-- IE needs 512+ bytes: https://docs.microsoft.com/archive/blogs/ieinternals/friendly-http-error-pages -->

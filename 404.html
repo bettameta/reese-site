@@ -1,107 +1,127 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>404 Page Not Found</title>
-  <meta name="description" content="Web Developer and Web Designer utilizing key skills to reduce bounce rates and increase conversions for clients."> 
-  <meta name="keywords" content="WordPress web developer designer brand reduce bounce rates increase website conversions">
-  <link rel="icon" href="/img/square-eye.webp" type="image/webp">
-  <style>
-    :root {
-      --yellow-l: #fcf8c4; /* Links */
-      --yellow-m: #F8CC09;  /* Brilliant - Link Hover */
-      --yellow-f: #f8cc0989;
-      --btn-hov:  #023c75;
-      --dark-bg:  #18181a;
-      --white:    #f7f7f7;
-    }
+  <head>
+    <meta charset="utf-8">
+    <title>404 Page Not Found</title>
+    <meta name="description" content="Web Developer and Web Designer utilizing key skills to reduce bounce rates and increase conversions for clients.">
+    <meta name="keywords" content="WordPress web developer designer brand reduce bounce rates increase website conversions">
+    <link rel="icon" href="/img/square-eye.webp" type="image/webp">
+    <style>
+      :root {
+        --yellow-l: #fcf8c4;
+        /* Links */
+        --yellow-m: #F8CC09;
+        /* Brilliant - Link Hover */
+        --yellow-f: #f8cc0989;
+        --btn-hov: #023c75;
+        --dark-bg: #18181a;
+        --white: #f7f7f7;
+      }
 
-    html {
-      font-family: sans-serif;
-      margin: 0;
-    }
-    body {
-      background-color: var(--dark-bg);
-      margin: 0;
-      /* Centers the container vertically and horizontally */
-      display: flex;
-      flex-direction: column;
-      justify-content: center; 
-      align-items: center;
-      min-height: 100vh; /* Takes up the full height of the browser window */
-      padding: 2rem;     /* Prevents content from touching screen edges */
-      box-sizing: border-box;
-    }
-    .container {
-      width: 100%;
-      max-width: 800px; /* Constrains the width for better readability */
-      margin: 0 auto;
-    }
-    .text h1 {
-      color: var(--white);
-      font-size: 1.2rem;
-      font-weight: 400;
-      padding-bottom: 2rem; /* Consistent spacing below the text */
-      text-align: center;
-      margin: 0;
-    }
-    .error img {
-      display: block;
-      margin: 0 auto;
-      width: 100%;  
-      max-width: 600px; /* Prevents the ice cream from becoming giant on monitors */
-      height: auto;
-    }
-    .button {
-      display: flex;
-      justify-content: center;
-      margin-top: 2.5em;
-    }
-    .button a {
-      background-color: transparent;
-      color: var(--white);
-      border: 2px solid var(--white);
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 1.3rem;
-      padding: 12px 24px;
-      min-width: 200px; /* Better than 50% width for responsiveness */
-      cursor: pointer;
-      border-radius: 0; 
-      transition: 0.5s background-color ease;
-    }
-    
-    .button a:hover {
-      background-color: var(--yellow-l);
-      border: 2px solid var(--yellow-l);
-      color: var(--btn-hov);
-    }
+      html {
+        font-family: sans-serif;
+        margin: 0;
+      }
 
-    /* Tablet */
-    @media only screen and (min-width: 768px) {
-      .text h1 { font-size: 1.6rem; }
-      .button a { font-size: 1.6rem; }
-    }
-    /* Large Desktop */
-    @media only screen and (min-width: 1400px) {
-      .text h1 { font-size: 2rem; }
-      .button a { font-size: 2rem; } 
-    }
-  </style>
-</head>
+      body {
+        background-color: var(--dark-bg);
+        margin: 0;
+        /* Centers the container vertically and horizontally */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        /* Takes up the full height of the browser window */
+        padding: 2rem;
+        /* Prevents content from touching screen edges */
+        box-sizing: border-box;
+      }
 
-<body>
-  <main class="container">
-    <div class="text">
-      <h1>The page you were trying to view does not exist.</h1>
-    </div>
-    <div class="error">
-      <img src="img/error-404-orange.webp" alt="404 Error - Dropped ice cream scoop"/>
-    </div>
-    <div class="button">
-      <a href="https://bettameta.com">Return Home</a>
-    </div>
-  </main>
-</body>
+      .container {
+        width: 100%;
+        max-width: 800px;
+        /* Constrains the width for better readability */
+        margin: 0 auto;
+      }
+
+      .text h1 {
+        color: var(--white);
+        font-size: 1.2rem;
+        font-weight: 400;
+        padding-bottom: 2rem;
+        /* Consistent spacing below the text */
+        text-align: center;
+        margin: 0;
+      }
+
+      .error img {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 600px;
+        /* Prevents the ice cream from becoming giant on monitors */
+        height: auto;
+      }
+
+      .button {
+        display: flex;
+        justify-content: center;
+        margin-top: 2.5em;
+      }
+
+      .button a {
+        background-color: transparent;
+        color: var(--white);
+        border: 2px solid var(--white);
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 1.3rem;
+        padding: 12px 24px;
+        min-width: 200px;
+        /* Better than 50% width for responsiveness */
+        cursor: pointer;
+        border-radius: 0;
+        transition: 0.5s background-color ease;
+      }
+
+      .button a:hover {
+        background-color: var(--yellow-l);
+        border: 2px solid var(--yellow-l);
+        color: var(--btn-hov);
+      }
+
+      /* Tablet */
+      @media only screen and (min-width: 768px) {
+        .text h1 {
+          font-size: 1.6rem;
+        }
+
+        .button a {
+          font-size: 1.6rem;
+        }
+      }
+
+      /* Large Desktop */
+      @media only screen and (min-width: 1400px) {
+        .text h1 {
+          font-size: 1.9rem;
+        }
+
+        .button a {
+          font-size: 1.9rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <div class="text">
+        <h1>The page you were trying to view does not exist.</h1>
+      </div>
+      <div class="error"><img src="img/error-404-orange.webp" alt="404 Error - Dropped ice cream scoop" /></div>
+      <div class="button"><a href="https://bettameta.com">Return Home</a></div>
+    </main>
+  </body>
 </html>

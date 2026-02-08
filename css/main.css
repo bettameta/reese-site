@@ -11,7 +11,7 @@
   Base styles: opinionated defaults
   ========================================================================== */
 
-  html {
+html {
   color: #222;
   font-size: 1rem;
   line-height: 1.4;
@@ -89,69 +89,68 @@ textarea {
 
 /*---- GENERAL PAGES BASE STYLES ------*/
 
-html{
+html {
   font-size: 16px;
 }
 
 :root {
   --yellow-l: #fcf8c4; /* Links */
-  --yellow-m: #F8CC09;  /* Brilliant - Link Hover */
+  --yellow-m: #f8cc09; /* Brilliant - Link Hover */
   --yellow-f: #f8cc0989;
-  --btn-hov:  #023c75;
-  --dark-bg:  #18181a;
-  --white:    #f7f7f7;
+  --btn-hov: #023c75;
+  --dark-bg: #18181a;
+  --white: #f7f7f7;
 }
 
-body{
-  font-family: 'Montserrat' , sans-serif;
+body {
+  font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   color: var(--white);
   background-color: #000;
 }
 
-ul{
+ul {
   list-style-type: none;
 }
 
 a,
 h2 a,
-
 nav ul li a,
 #contact-me a,
-p a{
+p a {
   text-decoration: none;
   color: var(--yellow-l);
-  transition: 0.5s color ease-in-out; 
+  transition: 0.5s color ease-in-out;
 }
 
 a:hover,
 figure img:hover,
 h2 a:hover,
 #contact-me a:hover,
-p a:hover{
+p a:hover {
   color: var(--yellow-m);
   text-decoration: none;
 }
 
-figure img:hover{
+figure img:hover {
   border: 5px solid var(--yellow-m);
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
   color: var(--yellow-l);
 }
 
-nav ul li a{
+nav ul li a {
   color: var(--yellow-m);
 }
 
 /* FOOTER SOCIAL ICON COLORS AND DEC */
-footer a{
+footer a {
   text-decoration: none;
 }
 
 /*  CONTENT WRAPPER  */
-.content-wrapper{
+.content-wrapper {
   margin: 0;
 }
 
@@ -159,7 +158,7 @@ footer a{
 
 /** HERO BACKGROUND IMAGE 
 Image by Danny Meneses via Pexels **/
-.hero-area{
+.hero-area {
   background: url(/img/hero-computer.webp), center no-repeat;
   background-blend-mode: overlay;
   background-size: cover;
@@ -168,17 +167,18 @@ Image by Danny Meneses via Pexels **/
 
 /** ABOUT ME BACKGROUND IMAGE **/
 
-#about-me{
-  background-image: linear-gradient(rgba(0, 9, 14, .6),rgba(0, 9, 14, 0.2)) , url(/img/about-me.webp);
+#about-me {
+  background-image: linear-gradient(rgba(0, 9, 14, 0.6), rgba(0, 9, 14, 0.2)),
+    url(/img/about-me.webp);
   background-size: cover;
-  width: 100%; 
-}
-
-img{
   width: 100%;
 }
 
-figure img{
+img {
+  width: 100%;
+}
+
+figure img {
   border: 5px solid var(--yellow-l);
   transition: 0.5s border-color ease;
   box-sizing: border-box;
@@ -186,20 +186,21 @@ figure img{
 
 /********** GENERAL FONT INFO  ****/
 
-h3, #port-h3{
+h3,
+#port-h3 {
   font-size: 1.6rem !important;
   margin-top: 35px !important;
-  text-align: center!important;
-  font-family:'Source Code Pro', sans-serif !important;
+  text-align: center !important;
+  font-family: "Source Code Pro", sans-serif !important;
 }
 
-p{
+p {
   font-size: 1.1rem;
   line-height: 1.7;
 }
 
-strong{
-    font-weight: 900;
+strong {
+  font-weight: 900;
 }
 
 /*---------------------------------------
@@ -208,7 +209,7 @@ strong{
 
 /*********** HEADER *********/
 
-header{
+header {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -216,7 +217,7 @@ header{
   margin: 30px 0;
 }
 
-header .content-wrapper{
+header .content-wrapper {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -224,69 +225,67 @@ header .content-wrapper{
   padding: 0 5%;
 }
 
-header h2{
+header h2 {
   color: var(--yellow-m);
   font-size: 1.5rem;
   text-align: center;
   margin-bottom: 0;
 }
 
-header div p{
+header div p {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
   width: 100%;
-  font-size: .9em;
+  font-size: 0.9em;
   text-align: center;
   margin-top: 2%;
   color: var(--yellow-l);
 }
 
-.header-divider{
+.header-divider {
   background-color: #646363;
   height: 2px;
   width: 100%;
 }
 
-header nav{
+header nav {
   display: flex;
   justify-content: space-around;
   padding: 0 0 10px 0;
   margin: 5px 0;
   width: 95%;
-
 }
 
-header ul{
+header ul {
   display: flex;
   justify-content: space-around;
   margin: 0;
   width: 80%;
 }
 
-header ul{
+header ul {
   padding: 0;
-  margin: 0; 
+  margin: 0;
 }
 
-header li{
+header li {
   font-size: 0.9rem;
   margin-top: 5px;
 }
 
 /*********** HERO SECTION *********/
-  
-.hero-area{
+
+.hero-area {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-flow: row wrap;
-
 }
 
-h1{
+h1 {
   font-size: 2rem;
-  font-family: 'Source Code Pro', sans-serif;
+  font-family: "Source Code Pro", sans-serif;
   padding: 80px 20px 50px 20px;
   margin-left: 5%;
   width: 47%;
@@ -294,14 +293,13 @@ h1{
   text-shadow: 1px 1px var(--dark-bg);
 }
 
-
-h1 span{
+h1 span {
   color: var(--yellow-m);
 }
 
 /******* PORTFOLIO SECTION ******/
 
-#portfolio{
+#portfolio {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -309,12 +307,13 @@ h1 span{
   padding: 0 5%;
 }
 
-#portfolio h3, h2#h3{
+#portfolio h3,
+h2#h3 {
   font-size: 1.2rem;
   color: #c6c7d4;
 }
 
-#portfolio .divider{
+#portfolio .divider {
   background-color: var(--yellow-l);
   height: 3px;
   width: 90%;
@@ -333,57 +332,55 @@ figure a {
   line-height: 0; /* Removes the tiny ghost gap browsers add for text descenders */
 }
 
-
-
 /****** ABOUT ME SECTION *******/
 
-#about-me{
+#about-me {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  text-shadow: .2px .2px #363680;
+  text-shadow: 0.2px 0.2px #363680;
 }
 
-#about-me p{
+#about-me p {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 30px 0 0px 20px;
   width: 90%;
   color: #f9f6f6;
-  text-shadow: .4px .4px #363680;
+  text-shadow: 0.4px 0.4px #363680;
 }
 
-#about-me .pdf{
-    display: inline-block;
-    margin: 0;
-    padding: 40px 0 50px 20px;
+#about-me .pdf {
+  display: inline-block;
+  margin: 0;
+  padding: 40px 0 50px 20px;
 }
 
 .pdf a {
-    background-color: transparent;
-    color: var(--white);
-    border: 2px solid var(--white);
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 1.2rem;
-    padding: 10px 12px;
-    border-radius: 0;
-    transition: 0.5s all ease-in-out;
-    margin-top: 0;
+  background-color: transparent;
+  color: var(--white);
+  border: 2px solid var(--white);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.2rem;
+  padding: 10px 12px;
+  border-radius: 0;
+  transition: 0.5s all ease-in-out;
+  margin-top: 0;
 }
 
-.pdf a:hover{
-    background-color: var(--yellow-l);
-    border: 2px solid var(--yellow-l);
-    color: var(--btn-hov);
+.pdf a:hover {
+  background-color: var(--yellow-l);
+  border: 2px solid var(--yellow-l);
+  color: var(--btn-hov);
 }
 
 /************ FOOTER ********/
 
-footer{
-  display: flex; 
+footer {
+  display: flex;
   justify-content: center;
   flex-direction: column;
   flex-flow: row wrap;
@@ -391,7 +388,7 @@ footer{
 }
 
 /* PADDING AROUND & ALL ICONS */
-footer p{
+footer p {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -400,18 +397,18 @@ footer p{
   padding: 0 20px;
 }
 
-.footer h3{
+.footer h3 {
   display: flex;
   justify-content: space-around;
 }
 
-footer .contact{
-    display: flex;
+footer .contact {
+  display: flex;
 }
 
-footer .content-wrapper{
-    padding: 3% 5% 2%;
-    margin: 0;
+footer .content-wrapper {
+  padding: 3% 5% 2%;
+  margin: 0;
 }
 
 /* CONFINES OF SOCIAL ICONS AS A GROUP 
@@ -422,19 +419,18 @@ footer .social-icons{
 }*/
 
 /* COPYRIGHT */
-.copyright{
+.copyright {
   width: 100%;
 }
 
-.copyright h4{
+.copyright h4 {
   text-align: center;
   font-size: 0.7rem;
   color: var(--white);
 }
 
-
-.copyright{
- margin-top: 10px;
+.copyright {
+  margin-top: 10px;
 }
 
 /* BACK TO TOP STYLES */
@@ -459,20 +455,22 @@ footer .social-icons{
   background-size: 40% auto;
   background-repeat: no-repeat;
   background-position: center center;
-  transition: .5s background-color ease-in-out;
+  transition: 0.5s background-color ease-in-out;
 }
 
-.back-to-top:hover, .back-to-top:focus {
-	background-color: var(--yellow-f);
-    color: #646363;
+.back-to-top:hover,
+.back-to-top:focus {
+  background-color: var(--yellow-f);
+  color: #646363;
 }
- 
+
 /*This is hides the Back to Top text in the link, but keeps it for accessibility purposes */
 .visually-hidden {
-	position: absolute !important;
-  height: 1px; width: 1px; 
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
   overflow: hidden;
-  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */  
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
 }
 
 /* ==========================================================================
@@ -563,109 +561,105 @@ footer .social-icons{
     Modify as content requires.
     ========================================================================== */
 
-  /*----------------------------------------------------
+/*----------------------------------------------------
                       TABLET MEDIA QUERIES 
   -----------------------------------------------------*/
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 768px) {
   /*----------- TAB GENERAL STYLES ------------------*/
-    .content-wrapper{
-      margin: 100px 0;
-      max-width: 900px
-    }
+  .content-wrapper {
+    margin: 100px 0;
+    max-width: 900px;
+  }
 
   /********** TAB GENERAL FONT INFO  ****/
 
-  h3, 
-  #port-h3{
+  h3,
+  #port-h3 {
     font-size: 2rem !important;
-    
   }
 
-  h1{
+  h1 {
     font-size: 3.5rem;
   }
 
   /********** TAB HEADER ***********/
 
-  header .content-wrapper{
+  header .content-wrapper {
     margin: 15px 0;
     width: 95%;
   }
-  
-  header h2{
+
+  header h2 {
     font-size: 2.9rem;
   }
 
-  header div p{
+  header div p {
     width: 100%;
     font-size: 1.6rem;
-  
   }
 
-  .header-divider{
+  .header-divider {
     height: 0;
     width: 0%;
   }
-  
-  header nav{
+
+  header nav {
     margin: 0;
     display: flex;
     justify-content: space-around;
     padding: 0 0 10px 0;
-    width: 90%; 
+    width: 90%;
   }
-  
-  header li{
+
+  header li {
     font-size: 1.5rem;
-    margin-top: 5px; 
+    margin-top: 5px;
   }
-  
+
   /******** TAB HERO AREA *********/
 
-  h1{
-    
+  h1 {
     padding: 80px 30px 20px 30px;
   }
 
-  .hero-area .content-wrapper{
+  .hero-area .content-wrapper {
     margin: 50px 0;
   }
 
   /******** TAB PORTFOLIO *********/
 
-  #portfolio .content-wrapper{
+  #portfolio .content-wrapper {
     margin: 2% 0;
   }
-  
-  #portfolio h2{
+
+  #portfolio h2 {
     margin: 0 0 -3% 0;
   }
 
-  #portfolio h2{
-    font-size:  1.5rem;
+  #portfolio h2 {
+    font-size: 1.5rem;
   }
 
-  #portfolio p{
+  #portfolio p {
     font-size: 1.3rem;
   }
 
-  figure{
+  figure {
     padding: 0;
   }
 
-  figure img{
+  figure img {
     width: 100%;
   }
 
-  #portfolio .divider{
+  #portfolio .divider {
     height: 3px;
   }
-  
 
   /******* TAB ABOUT ME ****/
 
-  #about-me .content-wrapper{
+  #about-me .content-wrapper {
     margin: 25px 0;
   }
 
@@ -673,32 +667,32 @@ footer .social-icons{
     font-size: 1.9rem;
   }*/
 
-  #about-me p{
+  #about-me p {
     font-size: 1.3rem;
     padding: 20px 0 50px 20px;
     width: 85%;
   }
-/****** Resume Link *******/
-   #about-me .pdf{
+  /****** Resume Link *******/
+  #about-me .pdf {
     margin: 0;
     padding: 10px 20px 80px 40px;
   }
 
   /******** TAB FOOTER ******/
 
-  footer{
+  footer {
     justify-content: center;
     flex-direction: row;
   }
 
-  #contact-me{
+  #contact-me {
     display: flex;
     justify-content: space-around;
     width: 100%;
   }
 
-    /* PADDING AROUND & ALL ICONS */
- footer p{
+  /* PADDING AROUND & ALL ICONS */
+  footer p {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -706,102 +700,98 @@ footer .social-icons{
     margin: 0;
   }
 
-    /* CONFINES OF SOCIAL ICONS AS A GROUP */
-    footer .social-icons{
+  /* CONFINES OF SOCIAL ICONS AS A GROUP */
+  footer .social-icons {
     display: flex;
     justify-content: space-between;
-    align-items: center; 
+    align-items: center;
     padding: 0 2% 0 5%;
-    }
-
+  }
 }
-  /*----------------------------------------------------
+/*----------------------------------------------------
                   DESKTOP MEDIA QUERIES 
 -----------------------------------------------------*/
-@media only screen and (min-width: 1200px){
+@media only screen and (min-width: 1200px) {
   /*----------- GENERAL STYLES ------------------*/
-.content-wrapper{
-  max-width: 1100px;
-} 
+  .content-wrapper {
+    max-width: 1100px;
+  }
 
   /******* DESK FONTS ************/
 
   h3,
-  #port-h3{
+  #port-h3 {
     font-size: 2.5rem !important;
-    
   }
 
-  h1{
+  h1 {
     font-size: 4.5rem;
   }
 
-  header h2{
+  header h2 {
     font-size: 3.5rem;
   }
 
-  #portfolio article{
+  #portfolio article {
     padding: 5%;
   }
 
   /********** DESK IMG *************/
 
   /** HERO BACKGROUND IMAGE **/
-  .hero-area{
+  .hero-area {
     height: 700px;
   }
 
   /** TAB ABOUT ME BACKGROUND IMAGE **/
 
-  #about-me p{
+  #about-me p {
     width: 75%;
   }
 
-/********* DESK HEADER ********/
+  /********* DESK HEADER ********/
 
-
-  header div p{
+  header div p {
     font-size: 2rem;
   }
-  header li{
+  header li {
     font-size: 2.1rem;
   }
 
-
   /****** DESK PORTFOLIO ******/
 
-  #portfolio .content-wrapper{
+  #portfolio .content-wrapper {
     width: 90%;
   }
 
   /***** ALTERNATING PORTFOLIO CONTENT SIDE BY SIDE ON DESKTOPS  *****/
-  #portfolio .content-wrapper-flip article{
+  #portfolio .content-wrapper-flip article {
     display: flex;
     flex-direction: row-reverse;
   }
 
-  #portfolio .content-wrapper-static article{
+  #portfolio .content-wrapper-static article {
     display: flex;
     flex-direction: row;
   }
 
-  #portfolio h2{
-    font-size:  1.5rem;
+  #portfolio h2 {
+    font-size: 1.5rem;
     text-align: left;
   }
 
-  #portfolio article{
+  #portfolio article {
     display: flex;
     justify-content: space-between;
     flex-flow: row wrap;
     align-items: center;
   }
 
-  #portfolio article div{
+  #portfolio article div {
     width: 46%;
   }
 
-  #portfolio figure{
+  #portfolio figure {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -809,17 +799,15 @@ footer .social-icons{
     width: 46%;
   }
 
-  #portfolio .divider{
+  #portfolio .divider {
     height: 0px;
   }
 
-
   /******* DESK FOOTER *******/
 
-  footer p{
+  footer p {
     font-size: 2rem;
   }
-
 }
 
 @media print,
@@ -903,4 +891,3 @@ footer .social-icons{
     page-break-after: avoid;
   }
 }
-

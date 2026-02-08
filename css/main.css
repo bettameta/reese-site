@@ -13,7 +13,7 @@
 
   html {
   color: #222;
-  font-size: 1em;
+  font-size: 1rem;
   line-height: 1.4;
 }
 
@@ -46,7 +46,7 @@ hr {
   height: 1px;
   border: 0;
   border-top: 1px solid #ccc;
-  margin: 1em 0;
+  margin: 1rem 0;
   padding: 0;
 }
 
@@ -85,7 +85,7 @@ textarea {
 
 /* ==========================================================================
     Author's custom styles
-    ========================================================================== */
+   ========================================================================== */
 
 /*---- GENERAL PAGES BASE STYLES ------*/
 
@@ -95,46 +95,52 @@ html{
 
 body{
   font-family: 'Montserrat' , sans-serif;
-  font-size: 1em;
-  /*color: #dadbd0;
-  background-color: #18181a;
-  */
-  color: #dadbd0;
+  font-size: 1rem;
+  color: #f7f7f7;
   background-color: #000;
-  /*background-color: #18181a;*/
 }
 
 ul{
   list-style-type: none;
 }
 
-a{
-  text-decoration: none;
-  color: #bf992f;
-  
+header h2{
+  color: #f7f7f7;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 0;
 }
+
+a,
+figure a,
+h2 a,
+nav ul li a,
+#contact-me a,
+p a{
+  text-decoration: none;
+  color: #6EB2FF;
+  transition: 0.5s color ease-in-out; 
+}
+
+a:hover,
+figure a:hover,
+h2 a:hover,
+nav ul li a:hover,
+#contact-me a:hover,
+p a:hover{
+  color: #A5F3FC;
+  text-decoration: none;
+}
+
 /* FOOTER SOCIAL ICON COLORS AND DEC */
 footer a{
   text-decoration: none;
-  color: #e2bb0d;
-}
-/* NAV COLOR AND DEC */
-nav a{
-  text-decoration: none;
-  color: #bf992f;
-}
-
-nav a:hover{
-  text-decoration: none;
-  color: #1d8ae4;
 }
 
 /*  CONTENT WRAPPER  */
 .content-wrapper{
-  width: 95%;
   margin: 0;
 }
-
 
 /********** IMG *************/
 
@@ -162,27 +168,25 @@ img{
 /* IMG BORDER COLOR AND WIDTH */
 #portfolio figure img{
   border: 5px solid;
- 
 }
 
 /********** GENERAL FONT INFO  ****/
 
-h3{
-  font-size: 1.2em;
-  margin-top: 35px;
-  text-align: center;
-  font-family:'Source Code Pro', sans-serif;
-  /* REMOVING COLOR SO IT STANDS OUT MORE
-  color: #bf992f;
-  */
+h3, #port-h3{
+  font-size: 1.6rem !important;
+  margin-top: 35px !important;
+  text-align: center!important;
+  font-family:'Source Code Pro', sans-serif !important;
 }
 
 p{
-  font-size: 1em;
-  line-height: 1.5em;
-
+  font-size: 1.1rem;
+  line-height: 1.7;
 }
 
+strong{
+    font-weight: 900;
+}
 
 /*---------------------------------------
             MOBILE STYLES
@@ -195,7 +199,7 @@ header{
   justify-content: center;
   align-content: center;
   flex-flow: row wrap;
-  margin-bottom: 30px;
+  margin: 30px 0;
 }
 
 header .content-wrapper{
@@ -205,22 +209,14 @@ header .content-wrapper{
   flex-flow: row wrap;
 }
 
-
-
-header h2{
-  font-size: 1.8em;
-  text-align: center;
-  margin: 25px 0 0 0;
-  color: #e2bb0d;
-}
-
 header div p{
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
   width: 100%;
-  font-size: 1.2em;
+  font-size: 1em;
   text-align: center;
+  margin-top: 2%;
 }
 
 .header-divider{
@@ -251,13 +247,10 @@ header ul{
 }
 
 header li{
-  font-size: 1.2em;
+  font-size: 1rem;
   margin-top: 5px;
   
 }
-
-
-
 
 /*********** HERO SECTION *********/
   
@@ -270,7 +263,7 @@ header li{
 }
 
 h1{
-  font-size: 2em;
+  font-size: 2rem;
   font-family: 'Source Code Pro', sans-serif;
   padding: 80px 20px 50px 20px;
   margin-left: 5%;
@@ -286,32 +279,27 @@ h1 span{
 
 /******* PORTFOLIO SECTION ******/
 
-
 #portfolio{
   display: flex;
   justify-content: center;
   align-content: center;
   flex-flow: row wrap;
+  padding: 0 5%;
 }
 
-#portfolio h2{
-  font-size: 1.2em;
-  text-align: center;
+#portfolio h3, h2#h3{
+  font-size: 1.2rem;
   color: #c6c7d4;
 }
 
-#portfolio article{
-  padding: 2%;
-}
-
-#portfolio p{
-  padding: 0 42px;
-}
-
 #portfolio .divider{
-  background-color: #bf992f;
+  background-color: #6EB2FF;
   height: 3px;
   width: 90%;
+}
+
+figure{
+    margin: 30px 0 0 0 !important;
 }
 
 /****** ABOUT ME SECTION *******/
@@ -334,29 +322,28 @@ h1 span{
 }
 
 #about-me .pdf{
-  display: inline-block;
-  margin: 0;
-  padding: 40px 0 50px 20px;
+    display: inline-block;
+    margin: 0;
+    padding: 40px 0 50px 20px;
 }
 
 .pdf button {
-  background: transparent;
-  padding: 10px 20px;
-  border-radius: 50px;
-  border: 1.5px solid #fff;
-  margin-top: 0;
-  }
+    background: transparent;
+    font-size: 1.2rem;
+    padding: 10px 12px;
+    border-radius: 0;
+    border: 1px solid #f7f7f7;
+    transition: 0.5s background-color ease-in-out;
+    margin-top: 0;
+}
 
-  .pdf button:hover{
-    background-color: #e2bb0da2;
-    transition: .7s background-color ease-in-out;
-  }
+.pdf button:hover{
+    background-color: #000;
+}
 
 .pdf button a{
-  color: #fff;
-  font-size: 1rem;
-  }
-
+    color: #f7f7f7;
+}
 
 /************ FOOTER ********/
 
@@ -368,20 +355,14 @@ footer{
   width: 100%;
 }
 
-footer .content-wrapper{
-  width: 30%;
-  margin: 60px;
-  padding: 0;
-}
-
 /* PADDING AROUND & ALL ICONS */
 footer p{
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   margin: 0;
-
+  padding: 0 20px;
 }
 
 .footer h3{
@@ -389,73 +370,77 @@ footer p{
   justify-content: space-around;
 }
 
+footer .contact{
+    display: flex;
+}
 
-/* CONFINES OF SOCIAL ICONS AS A GROUP */
+footer .content-wrapper{
+    padding: 3% 5% 2%;
+    margin: 0;
+}
+
+/* CONFINES OF SOCIAL ICONS AS A GROUP 
 footer .social-icons{
   display: flex;
   justify-content: space-around;
   align-items: center; 
-}
-
+}*/
 
 /* COPYRIGHT */
 .copyright{
-  margin: 25px 30px 0 30px;
   width: 100%;
 }
 
 .copyright h4{
   text-align: center;
-  margin: 3px 0 0;
-  font-size: .4em;
-  color: #bf992f
+  font-size: 0.7rem;
+  color: #f7f7f7;
+}
+
+
+.copyright{
+ margin-top: 10px;
 }
 
 /* BACK TO TOP BUTTON STYLES */
 .back-to-top {
-	margin: 0;
-	position: fixed;
-	bottom: 0;
-	right: 0;
-	margin-right: 10px;
-	margin-bottom: 10px;
-	width: 40px;
-	height: 40px;
-	z-index: 100;
-	display: none;
-	text-decoration: none;
-	color: #ffffff;
-	/*Creates the colored box around the arrow (optional) */
-	background-color: #e2bb0d;
-	/* Arrow */
-	background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/259273/up-arrow2.svg");
-	/* Arrow size */
-	background-size: 40% auto;
-	background-repeat: no-repeat;
-	background-position: center center;
-	transition: .7s background-color ease-in-out;
+  margin: 0;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: 40px;
+  height: 40px;
+  z-index: 100;
+  display: none;
+  text-decoration: none;
+  color: #f7f7f7;
+  /*Creates the colored box around the arrow (optional) */
+  background-color: #6EB2FF;
+  /* Arrow */
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/259273/up-arrow2.svg");
+  /* Arrow size */
+  background-size: 40% auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: .5s background-color ease-in-out;
 }
 
 .back-to-top:hover, .back-to-top:focus {
-	background-color: #1d8ae4;
+	background-color: #A5F3FC;
+    color: #646363;
 }
  
 /*This is hides the Back to Top text in the link, but keeps it for accessibility purposes */
 .visually-hidden {
-		position: absolute !important;
+	position: absolute !important;
     height: 1px; width: 1px; 
     overflow: hidden;
     clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
     
     
 }
-
-
-
-
-
-
-
 
 /* ==========================================================================
     Helper classes
@@ -558,18 +543,14 @@ footer .social-icons{
 
   /********** TAB GENERAL FONT INFO  ****/
 
-  h3{
-    font-size: 2em;
+  h3, 
+  #port-h3{
+    font-size: 2rem !important;
     
   }
 
   h1{
-    font-size: 3.5em;
-  }
-
-  p{
-    font-size: 1.2em;
-    line-height: 1.6em;
+    font-size: 3.5rem;
   }
 
   /********** TAB HEADER ***********/
@@ -580,12 +561,12 @@ footer .social-icons{
   }
   
   header h2{
-    font-size: 2.9em;
+    font-size: 2.9rem;
   }
 
   header div p{
     width: 100%;
-    font-size: 1.8em;
+    font-size: 1.7rem;
   
   }
 
@@ -603,12 +584,10 @@ footer .social-icons{
   }
   
   header li{
-    font-size: 1.8em;
+    font-size: 1.6rem;
     margin-top: 5px; 
   }
   
- 
-
   /******** TAB HERO AREA *********/
 
   h1{
@@ -620,30 +599,22 @@ footer .social-icons{
     margin: 50px 0;
   }
 
- 
-
   /******** TAB PORTFOLIO *********/
 
   #portfolio .content-wrapper{
-    margin: 2%;
+    margin: 2% 0;
   }
   
-  #portfolio h3{
-    margin: 10% 0 -3% 0;
+  #portfolio h2{
+    margin: 0 0 -3% 0;
   }
 
   #portfolio h2{
-    font-size:  1.5em;
-  }
-
-
-  #portfolio article{
-    padding: 10%;
-    
+    font-size:  1.5rem;
   }
 
   #portfolio p{
-    font-size: 1.3em;
+    font-size: 1.3rem;
   }
 
   #portfolio figure img{
@@ -662,11 +633,11 @@ footer .social-icons{
   }
 
   /*#about-me h3{
-    font-size: 1.9em;
+    font-size: 1.9rem;
   }*/
 
   #about-me p{
-    font-size: 1.3em;
+    font-size: 1.3rem;
     padding: 20px 0 50px 20px;
     width: 85%;
   }
@@ -683,45 +654,28 @@ footer .social-icons{
     flex-direction: row;
   }
 
-  footer .content-wrapper{
-      width: 70%;
-      margin: 60px;
-      padding: 0;
-  }
-
   #contact-me{
     display: flex;
     justify-content: space-around;
     width: 100%;
   }
 
-/* PADDING AROUND & ALL ICONS */
-footer p{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2em;
-  margin: 0;
+    /* PADDING AROUND & ALL ICONS */
+ footer p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin: 0;
   }
 
-/* CONFINES OF SOCIAL ICONS AS A GROUP */
-footer .social-icons{
-  display: flex;
-  justify-content: space-between;
-  align-items: center; 
-  padding: 0 2% 0 5%;
-}
-
-  /* COPYRIGHT */
-  .copyright h4{
-    margin: 4px 0 0 0;
-    font-size: .7em;
-  }
-
-  .copyright{
-    margin-top: 50px;
-  }
-  
+    /* CONFINES OF SOCIAL ICONS AS A GROUP */
+    footer .social-icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 0 2% 0 5%;
+    }
 
 }
   /*----------------------------------------------------
@@ -735,24 +689,18 @@ footer .social-icons{
 
   /******* DESK FONTS ************/
 
-  h3{
-    font-size: 2.5em;
+  h3,
+  #port-h3{
+    font-size: 2.5rem !important;
     
   }
 
   h1{
-    font-size: 4.5em;
-  }
-
-
-
-  p{
-    font-size: 1.3em;
-    line-height: 1.8em;
+    font-size: 4.5rem;
   }
 
   header h2{
-    font-size: 3.5em;
+    font-size: 3.5rem;
   }
 
   #portfolio article{
@@ -776,10 +724,10 @@ footer .social-icons{
 
 
   header div p{
-    font-size: 2.2em;
+    font-size: 2rem;
   }
   header li{
-    font-size: 2.2em;
+    font-size: 2.1rem;
   }
 
 
@@ -796,10 +744,8 @@ footer .social-icons{
   }
 
   #portfolio h2{
-    font-size:  1.5em;
+    font-size:  1.5rem;
     text-align: left;
-    padding-left: 17px;
-    margin-left: 25px;
   }
 
   #portfolio article{
@@ -828,22 +774,8 @@ footer .social-icons{
 
   /******* DESK FOOTER *******/
 
-  footer .content-wrapper{
-    width: 80%;
-    margin: 60px;
-    padding: 0;
-  }
-
   footer p{
-    font-size: 2.3em;
-  }
-
-  .copyright{
-    margin-top: 70px;
-  }
-  footer .copyright h4{
-    margin: 5px 0 0 0;
-    font-size: .9em;
+    font-size: 2.3rem;
   }
 
 }

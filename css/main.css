@@ -97,6 +97,7 @@ html{
   --yellow-l: #fcf8c4; /* Links */
   --yellow-m: #F8CC09;  /* Brilliant - Link Hover */
   --yellow-f: #f8cc0989;
+  --btn-hov:  #023c75;
   --dark-bg:  #18181a;
   --white:    #f7f7f7;
 }
@@ -289,7 +290,7 @@ h1{
   margin-left: 5%;
   width: 47%;
   color: var(--yellow-l);
-  text-shadow: 1px 1px #18181a;
+  text-shadow: 1px 1px var(--dark-bg);
 }
 
 
@@ -371,7 +372,7 @@ figure{
 .pdf a:hover{
     background-color: var(--yellow-l);
     border: 2px solid var(--yellow-l);
-    color: #023c75;
+    color: var(--btn-hov);
 }
 
 /************ FOOTER ********/

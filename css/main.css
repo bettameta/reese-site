@@ -93,10 +93,18 @@ html{
   font-size: 16px;
 }
 
+:root {
+  --yellow-l: #fcf8c4; /* Links */
+  --yellow-m: #F8CC09;  /* Brilliant - Link Hover */
+  --yellow-f: #f8cc0989;
+  --dark-bg:  #18181a;
+  --white:    #f7f7f7;
+}
+
 body{
   font-family: 'Montserrat' , sans-serif;
   font-size: 1rem;
-  color: #f7f7f7;
+  color: var(--white);
   background-color: #000;
 }
 
@@ -104,32 +112,41 @@ ul{
   list-style-type: none;
 }
 
-header h2{
-  color: #f7f7f7;
-  font-size: 2rem;
-  text-align: center;
-  margin-bottom: 0;
-}
-
 a,
-figure a,
 h2 a,
+
 nav ul li a,
 #contact-me a,
 p a{
   text-decoration: none;
-  color: #6EB2FF;
+  color: var(--yellow-l);
   transition: 0.5s color ease-in-out; 
 }
 
 a:hover,
-figure a:hover,
+figure img:hover,
 h2 a:hover,
-nav ul li a:hover,
 #contact-me a:hover,
 p a:hover{
-  color: #A5F3FC;
+  color: var(--yellow-m);
   text-decoration: none;
+}
+
+figure img{
+  border: 5px solid var(--yellow-l);
+  transition: 0.5s border-color ease;
+}
+
+figure img:hover{
+  border: 5px solid var(--yellow-m);
+}
+
+nav ul li a:hover{
+  color: var(--yellow-l);
+}
+
+nav ul li a{
+  color: var(--yellow-m);
 }
 
 /* FOOTER SOCIAL ICON COLORS AND DEC */
@@ -147,7 +164,7 @@ footer a{
 /** HERO BACKGROUND IMAGE 
 Image by Danny Meneses via Pexels **/
 .hero-area{
-  background: url(../img/hero-computer.webp), center no-repeat;
+  background: url(/img/hero-computer.webp), center no-repeat;
   background-blend-mode: overlay;
   background-size: cover;
   width: 100%;
@@ -156,18 +173,13 @@ Image by Danny Meneses via Pexels **/
 /** ABOUT ME BACKGROUND IMAGE **/
 
 #about-me{
-  background-image: linear-gradient(rgba(0, 9, 14, .6),rgba(0, 9, 14, 0.2)) , url(../img/about-me.webp);
+  background-image: linear-gradient(rgba(0, 9, 14, .6),rgba(0, 9, 14, 0.2)) , url(/img/about-me.webp);
   background-size: cover;
   width: 100%; 
 }
 
 img{
   width: 100%;
-}
-
-/* IMG BORDER COLOR AND WIDTH */
-#portfolio figure img{
-  border: 5px solid;
 }
 
 /********** GENERAL FONT INFO  ****/
@@ -207,6 +219,14 @@ header .content-wrapper{
   justify-content: center;
   align-content: center;
   flex-flow: row wrap;
+  padding: 0 5%;
+}
+
+header h2{
+  color: var(--yellow-m);
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 0;
 }
 
 header div p{
@@ -214,9 +234,10 @@ header div p{
   justify-content: center;
   flex-flow: row wrap;
   width: 100%;
-  font-size: 1em;
+  font-size: .9em;
   text-align: center;
   margin-top: 2%;
+  color: var(--yellow-l);
 }
 
 .header-divider{
@@ -247,9 +268,8 @@ header ul{
 }
 
 header li{
-  font-size: 1rem;
+  font-size: 0.9rem;
   margin-top: 5px;
-  
 }
 
 /*********** HERO SECTION *********/
@@ -268,13 +288,13 @@ h1{
   padding: 80px 20px 50px 20px;
   margin-left: 5%;
   width: 47%;
-  color: #faf49e;
+  color: var(--yellow-l);
   text-shadow: 1px 1px #18181a;
 }
 
 
 h1 span{
-  color: #f8cc0a;
+  color: var(--yellow-m);
 }
 
 /******* PORTFOLIO SECTION ******/
@@ -293,13 +313,20 @@ h1 span{
 }
 
 #portfolio .divider{
-  background-color: #6EB2FF;
+  background-color: var(--yellow-l);
   height: 3px;
   width: 90%;
 }
 
 figure{
-    margin: 30px 0 0 0 !important;
+  margin: 0 !important; /* Forces the figure to align with the text edge */
+  width: 100%;
+}
+
+#portfolio figure img {
+  width: 100%;
+  height: auto;
+  display: block; /* Removes the tiny gap at the bottom of images */
 }
 
 /****** ABOUT ME SECTION *******/
@@ -327,22 +354,24 @@ figure{
     padding: 40px 0 50px 20px;
 }
 
-.pdf button {
-    background: transparent;
+.pdf a {
+    background-color: transparent;
+    color: var(--white);
+    border: 2px solid var(--white);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
     font-size: 1.2rem;
     padding: 10px 12px;
     border-radius: 0;
-    border: 1px solid #f7f7f7;
-    transition: 0.5s background-color ease-in-out;
+    transition: 0.5s all ease-in-out;
     margin-top: 0;
 }
 
-.pdf button:hover{
-    background-color: #000;
-}
-
-.pdf button a{
-    color: #f7f7f7;
+.pdf a:hover{
+    background-color: var(--yellow-l);
+    border: 2px solid var(--yellow-l);
+    color: #023c75;
 }
 
 /************ FOOTER ********/
@@ -394,7 +423,7 @@ footer .social-icons{
 .copyright h4{
   text-align: center;
   font-size: 0.7rem;
-  color: #f7f7f7;
+  color: var(--white);
 }
 
 
@@ -402,7 +431,7 @@ footer .social-icons{
  margin-top: 10px;
 }
 
-/* BACK TO TOP BUTTON STYLES */
+/* BACK TO TOP STYLES */
 .back-to-top {
   margin: 0;
   position: fixed;
@@ -415,9 +444,9 @@ footer .social-icons{
   z-index: 100;
   display: none;
   text-decoration: none;
-  color: #f7f7f7;
+  color: var(--white);
   /*Creates the colored box around the arrow (optional) */
-  background-color: #6EB2FF;
+  background-color: var(--yellow-m);
   /* Arrow */
   background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/259273/up-arrow2.svg");
   /* Arrow size */
@@ -428,18 +457,16 @@ footer .social-icons{
 }
 
 .back-to-top:hover, .back-to-top:focus {
-	background-color: #A5F3FC;
+	background-color: var(--yellow-f);
     color: #646363;
 }
  
 /*This is hides the Back to Top text in the link, but keeps it for accessibility purposes */
 .visually-hidden {
 	position: absolute !important;
-    height: 1px; width: 1px; 
-    overflow: hidden;
-    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-    
-    
+  height: 1px; width: 1px; 
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */  
 }
 
 /* ==========================================================================
@@ -566,7 +593,7 @@ footer .social-icons{
 
   header div p{
     width: 100%;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
   
   }
 
@@ -584,7 +611,7 @@ footer .social-icons{
   }
   
   header li{
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     margin-top: 5px; 
   }
   
@@ -641,7 +668,7 @@ footer .social-icons{
     padding: 20px 0 50px 20px;
     width: 85%;
   }
-/****** Button *******/
+/****** Resume Link *******/
    #about-me .pdf{
     margin: 0;
     padding: 10px 20px 80px 40px;
@@ -743,6 +770,11 @@ footer .social-icons{
     flex-direction: row-reverse;
   }
 
+  #portfolio .content-wrapper-static article{
+    display: flex;
+    flex-direction: row;
+  }
+
   #portfolio h2{
     font-size:  1.5rem;
     text-align: left;
@@ -775,7 +807,7 @@ footer .social-icons{
   /******* DESK FOOTER *******/
 
   footer p{
-    font-size: 2.3rem;
+    font-size: 2rem;
   }
 
 }

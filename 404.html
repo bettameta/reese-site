@@ -7,6 +7,15 @@
   <meta name="keywords" content="WordPress web developer designer brand reduce bounce rates increase website conversions">
   <link rel="icon" href="/img/square-eye.webp" type="image/webp">
   <style>
+    :root {
+      --yellow-l: #fcf8c4; /* Links */
+      --yellow-m: #F8CC09;  /* Brilliant - Link Hover */
+      --yellow-f: #f8cc0989;
+      --btn-hov:  #023c75;
+      --dark-bg:  #18181a;
+      --white:    #f7f7f7;
+    }
+
     html {
       font-family: sans-serif;
       margin: 0;
@@ -29,7 +38,7 @@
       margin: 0 auto;
     }
     .text h1 {
-      color: #f7f7f7;
+      color: var(--white);
       font-size: 1.2rem;
       font-weight: 400;
       padding-bottom: 2rem; /* Consistent spacing below the text */
@@ -50,8 +59,8 @@
     }
     .button a {
       background-color: transparent;
-      color: #f7f7f7;
-      border: 2px solid #f7f7f7;
+      color: var(--white);
+      border: 2px solid var(--white);
       text-align: center;
       text-decoration: none;
       display: inline-block;

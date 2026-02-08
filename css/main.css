@@ -133,11 +133,6 @@ p a:hover{
   text-decoration: none;
 }
 
-figure img{
-  border: 5px solid var(--yellow-l);
-  transition: 0.5s border-color ease;
-}
-
 figure img:hover{
   border: 5px solid var(--yellow-m);
 }
@@ -181,6 +176,12 @@ Image by Danny Meneses via Pexels **/
 
 img{
   width: 100%;
+}
+
+figure img{
+  border: 5px solid var(--yellow-l);
+  transition: 0.5s border-color ease;
+  box-sizing: border-box;
 }
 
 /********** GENERAL FONT INFO  ****/
@@ -319,16 +320,20 @@ h1 span{
   width: 90%;
 }
 
-figure{
-  margin: 0 !important; /* Forces the figure to align with the text edge */
+figure {
+  margin: 0 !important;
+  padding: 8% 0 0;
   width: 100%;
+  overflow: hidden; /* Clips any sub-pixel overhang */
 }
 
-#portfolio figure img {
+figure a {
+  display: block; /* Force the link to take up the full width of the container */
   width: 100%;
-  height: auto;
-  display: block; /* Removes the tiny gap at the bottom of images */
+  line-height: 0; /* Removes the tiny ghost gap browsers add for text descenders */
 }
+
+
 
 /****** ABOUT ME SECTION *******/
 
@@ -645,7 +650,11 @@ footer .social-icons{
     font-size: 1.3rem;
   }
 
-  #portfolio figure img{
+  figure{
+    padding: 0;
+  }
+
+  figure img{
     width: 100%;
   }
 

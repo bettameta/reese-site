@@ -332,6 +332,30 @@ figure a {
   line-height: 0; /* Removes the tiny ghost gap browsers add for text descenders */
 }
 
+/****** OPEN SOURCE ***********/
+
+#opensource {
+  background-color: #161c31;
+}
+
+#opensource h3 {
+  margin-top: 0 !important;
+  text-align: center;
+}
+
+#opensource h2 {
+  text-align: center;
+}
+
+#opensource .content-wrapper {
+  padding: 5%;
+  margin: 0 auto;
+}
+
+#opensource p {
+  font-size: 1.1rem;
+}
+
 /****** ABOUT ME SECTION *******/
 
 #about-me {
@@ -345,7 +369,8 @@ figure a {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 30px 0 0px 20px;
+  margin-top: 30px;
+  padding: 0 5%;
   width: 90%;
   color: #f9f6f6;
   text-shadow: 0.4px 0.4px #363680;
@@ -354,7 +379,7 @@ figure a {
 #about-me .pdf {
   display: inline-block;
   margin: 0;
-  padding: 40px 0 50px 20px;
+  padding: 4% 0 10% 5%;
 }
 
 .pdf a {
@@ -641,7 +666,8 @@ footer .social-icons{
     font-size: 1.5rem;
   }
 
-  #portfolio p {
+  #portfolio p, 
+  #opensource p {
     font-size: 1.3rem;
   }
 
@@ -669,8 +695,7 @@ footer .social-icons{
 
   #about-me p {
     font-size: 1.3rem;
-    padding: 20px 0 50px 20px;
-    width: 85%;
+    /*width: 85%;*/
   }
   /****** Resume Link *******/
   #about-me .pdf {
@@ -801,6 +826,16 @@ footer .social-icons{
 
   #portfolio .divider {
     height: 0px;
+  }
+
+  /***** ABOUT ME *******/
+
+  #about-me p {
+    padding: 0;
+  }
+
+  #about-me .pdf {
+    padding: 40px 20px 80px 0px;
   }
 
   /******* DESK FOOTER *******/

@@ -299,7 +299,7 @@ h1 span {
 
 /******* PORTFOLIO SECTION ******/
 
-#portfolio {
+#sites {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -307,13 +307,18 @@ h1 span {
   padding: 0 5%;
 }
 
-#portfolio h3,
-h2#h3 {
-  font-size: 1.2rem;
+#sites h3,
+h2 {
+  font-size: 1.5rem;
   color: #c6c7d4;
 }
 
-#portfolio .divider {
+#sites
+h2 {
+  margin-bottom: 0;
+}
+
+#sites .divider {
   background-color: var(--yellow-l);
   height: 3px;
   width: 90%;
@@ -334,30 +339,30 @@ figure a {
 
 /****** OPEN SOURCE ***********/
 
-#opensource {
+#projects {
   background-color: #161c31;
 }
 
-#opensource h3 {
+#projects h3 {
   margin-top: 0 !important;
   text-align: center;
 }
 
-#opensource h2 {
+#projects h2 {
   text-align: center;
   color: var(--yellow-l);
 }
 
-#opensource h2:hover {
+#projects h2:hover {
   color: var(--yellow-m);
 }
 
-#opensource .content-wrapper {
+#projects .content-wrapper {
   padding: 5%;
   margin: 0 auto;
 }
 
-#opensource p {
+#projects p {
   font-size: 1.1rem;
 }
 
@@ -660,20 +665,20 @@ footer .social-icons{
 
   /******** TAB PORTFOLIO *********/
 
-  #portfolio .content-wrapper {
+  #sites .content-wrapper {
     margin: 2% 0;
   }
 
-  #portfolio h2 {
+  #sites h2 {
     margin: 0 0 -3% 0;
   }
 
-  #portfolio h2 {
+  #sites h2 {
     font-size: 1.5rem;
   }
 
-  #portfolio p, 
-  #opensource p {
+  #sites p, 
+  #projects p {
     font-size: 1.3rem;
   }
 
@@ -685,7 +690,7 @@ footer .social-icons{
     width: 100%;
   }
 
-  #portfolio .divider {
+  #sites .divider {
     height: 3px;
   }
 
@@ -763,7 +768,7 @@ footer .social-icons{
     font-size: 3.5rem;
   }
 
-  #portfolio article {
+  #sites article {
     padding: 5%;
   }
 
@@ -791,38 +796,38 @@ footer .social-icons{
 
   /****** DESK PORTFOLIO ******/
 
-  #portfolio .content-wrapper {
+  #sites .content-wrapper {
     width: 90%;
   }
 
   /***** ALTERNATING PORTFOLIO CONTENT SIDE BY SIDE ON DESKTOPS  *****/
-  #portfolio .content-wrapper-flip article {
+  #sites .content-wrapper-flip article {
     display: flex;
     flex-direction: row-reverse;
   }
 
-  #portfolio .content-wrapper-static article {
+  #sites .content-wrapper-static article {
     display: flex;
     flex-direction: row;
   }
 
-  #portfolio h2 {
+  #sites h2 {
     font-size: 1.5rem;
     text-align: left;
   }
 
-  #portfolio article {
+  #sites article {
     display: flex;
     justify-content: space-between;
     flex-flow: row wrap;
     align-items: center;
   }
 
-  #portfolio article div {
+  #sites article div {
     width: 46%;
   }
 
-  #portfolio figure {
+  #sites figure {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -830,7 +835,7 @@ footer .social-icons{
     width: 46%;
   }
 
-  #portfolio .divider {
+  #sites .divider {
     height: 0px;
   }
 

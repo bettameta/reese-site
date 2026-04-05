@@ -345,6 +345,11 @@ figure a {
 
 #opensource h2 {
   text-align: center;
+  color: var(--yellow-l);
+}
+
+#opensource h2:hover {
+  color: var(--yellow-m);
 }
 
 #opensource .content-wrapper {
@@ -384,12 +389,13 @@ figure a {
 
 .pdf a {
   background-color: transparent;
-  color: var(--white);
-  border: 2px solid var(--white);
+  color: var(--yellow-l);
+  border: 2px solid var(--yellow-l);
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 1.2rem;
+  font-weight: bold;
   padding: 10px 12px;
   border-radius: 0;
   transition: 0.5s all ease-in-out;
@@ -397,8 +403,8 @@ figure a {
 }
 
 .pdf a:hover {
-  background-color: var(--yellow-l);
-  border: 2px solid var(--yellow-l);
+  background-color: var(--yellow-m);
+  border: 2px solid var(--yellow-m);
   color: var(--btn-hov);
 }
 

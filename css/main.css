@@ -189,7 +189,6 @@ figure img {
 h3,
 #port-h3 {
   font-size: 1.6rem !important;
-  margin-top: 35px !important;
   text-align: center !important;
   font-family: "Source Code Pro", sans-serif !important;
 }
@@ -279,16 +278,18 @@ header li {
 .hero-area {
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-flow: row wrap;
+}
+
+.hero-area > div {
+  padding: 10% 0 10% 5%;
+
 }
 
 h1 {
   font-size: 2rem;
   font-family: "Source Code Pro", sans-serif;
-  padding: 80px 20px 50px 20px;
-  margin-left: 5%;
-  width: 47%;
+  width: 60%;
   color: var(--yellow-l);
   text-shadow: 1px 1px var(--dark-bg);
 }
@@ -305,6 +306,16 @@ h1 span {
   align-content: center;
   flex-flow: row wrap;
   padding: 0 5%;
+}
+
+#sites .content-wrapper {
+  margin: 3% 0 0;
+}
+
+
+.content-wrapper-static,
+.content-wrapper-flip {
+  margin-bottom: 5%;
 }
 
 #sites h3,
@@ -344,7 +355,6 @@ figure a {
 }
 
 #projects h3 {
-  margin-top: 0 !important;
   text-align: center;
 }
 
@@ -358,7 +368,7 @@ figure a {
 }
 
 #projects .content-wrapper {
-  padding: 5%;
+  padding: 3% 5%;
   margin: 0 auto;
 }
 
@@ -372,8 +382,11 @@ figure a {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  text-shadow: 0.2px 0.2px #363680;
 }
+
+#about-me .content-wrapper {
+    padding: 3% 5%;  
+  }
 
 #about-me p {
   display: flex;
@@ -603,10 +616,6 @@ footer .social-icons{
 
 @media only screen and (min-width: 768px) {
   /*----------- TAB GENERAL STYLES ------------------*/
-  .content-wrapper {
-    margin: 100px 0;
-    max-width: 900px;
-  }
 
   /********** TAB GENERAL FONT INFO  ****/
 
@@ -655,18 +664,10 @@ footer .social-icons{
 
   /******** TAB HERO AREA *********/
 
-  h1 {
-    padding: 80px 30px 20px 30px;
-  }
-
-  .hero-area .content-wrapper {
-    margin: 50px 0;
-  }
-
   /******** TAB PORTFOLIO *********/
 
   #sites .content-wrapper {
-    margin: 2% 0;
+    margin: 5% 0;
   }
 
   #sites h2 {
@@ -692,13 +693,10 @@ footer .social-icons{
 
   #sites .divider {
     height: 3px;
+    width: 100%;
   }
 
   /******* TAB ABOUT ME ****/
-
-  #about-me .content-wrapper {
-    margin: 25px 0;
-  }
 
   /*#about-me h3{
     font-size: 1.9rem;
@@ -768,15 +766,15 @@ footer .social-icons{
     font-size: 3.5rem;
   }
 
-  #sites article {
-    padding: 5%;
-  }
-
   /********** DESK IMG *************/
 
   /** HERO BACKGROUND IMAGE **/
   .hero-area {
     height: 700px;
+  }
+
+  .hero-area > div {
+    padding: 10% 0 10% 10%;
   }
 
   /** TAB ABOUT ME BACKGROUND IMAGE **/
@@ -795,9 +793,20 @@ footer .social-icons{
   }
 
   /****** DESK PORTFOLIO ******/
+  #sites {
+    padding: 0 10% 3%;
+  }
 
   #sites .content-wrapper {
     width: 90%;
+  }
+  .content-wrapper-static,
+  .content-wrapper-flip {
+    margin-bottom: 0;
+  }
+
+  #sites article {
+    padding-top: 5%;
   }
 
   /***** ALTERNATING PORTFOLIO CONTENT SIDE BY SIDE ON DESKTOPS  *****/
